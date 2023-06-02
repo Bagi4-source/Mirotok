@@ -834,6 +834,14 @@ async def get_plot(telegram_id):
                 return generate_plot(result), generate_ph_plot(result)
 
 
+def select_card(data):
+    result = []
+    for key in data:
+        result.append(cards.get(f"{key}", {}))
+
+    return result
+
+
 @dp.message_handler(content_types=['web_app_data'])
 async def web_app(message: types.Message):
     async with aiohttp.ClientSession(trust_env=True) as session:
@@ -855,9 +863,7 @@ async def web_app(message: types.Message):
     for item in data:
         if not item:
             return await message.answer(f"Непредвиденная ошибка!")
-    selected_cards = []
-    for key in data:
-        selected_cards.append(cards.get(key, {}))
+    selected_cards = select_card(data)
 
     names = "Вы выбрали репродукции картин Мироток:\n"
     names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
@@ -894,6 +900,47 @@ async def web_app(message: types.Message):
         await bot.send_media_group(doc, media=media)
 
 
+@dp.message_handler()
+async def manual_test(message: types.Message):
+    match = re.findall(r'\d{1,2}', message.text)
+    if not match:
+        return await message.answer("Я не знаю, что на это ответить")
+
+    if len(match) != 5:
+        return await message.answer("Должно быть 5 чисел")
+
+    for i in match:
+        if i > 49 or i < 1:
+            return await message.answer("Номера картин должны быть от 1 до 49")
+
+    selected_cards = select_card(match)
+    names = "Вы выбрали репродукции картин Мироток:\n"
+    names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
+    names += "\nОписание картин в таблице...\nАвтор живописных картин Бендицкий Игорь Эдуардович | BENDITSKIY IGOR"
+
+    f1 = await formula1(selected_cards)
+    power = await formula2(selected_cards)
+    await post_result(message.from_user.id, power)
+
+    plot, plot_ph = await get_plot(message.from_user.id)
+    image, _ = await formula3(selected_cards)
+    arrows, f4 = await formula4(selected_cards)
+
+    plot = plot.read()
+    plot_ph = plot_ph.read()
+    image = image.read()
+    arrows = arrows.read()
+
+    media = types.MediaGroup()
+    media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
+                                      f"Баланс кислотно-щелочной среды: {get_percent(power)}pH\n"
+                                      f"\n{f1}\n\n{f4}")
+    media.attach_photo(BytesIO(plot_ph))
+    media.attach_photo(BytesIO(image))
+    media.attach_photo(BytesIO(arrows))
+    media.attach_photo(types.InputFile('table.png'))
+    await message.answer_media_group(media=media)
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=setup_bot_commands)
-

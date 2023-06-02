@@ -168,6 +168,10 @@ def get_color(x):
     return (0, 0, 0)
 
 
+def get_res_string(items, key):
+    return f"{'ВП' if items[key] > 0 else 'НЗ' if items[key] < 0 else ''} {get_degree(items[key])}"
+
+
 def get_image(items):
     image = Image.open(os.path.join(ARROWS_DIR, 'bg.png'))
     for key, value in items.items():
@@ -176,12 +180,28 @@ def get_image(items):
             if os.path.exists(path):
                 item = Image.open(path)
                 image.paste(item, mask=item)
+            if value > 0:
+                path = os.path.join(os.path.join(ARROWS_DIR, key), f'0.png')
+                if os.path.exists(path):
+                    item = Image.open(path)
+                    image.paste(item, mask=item)
+            else:
+                path = os.path.join(os.path.join(ARROWS_DIR, key), f'-0.png')
+                if os.path.exists(path):
+                    item = Image.open(path)
+                    image.paste(item, mask=item)
+
     imageDraw = ImageDraw.Draw(image)
-    font = ImageFont.truetype(os.path.join(ARROWS_DIR, 'Inter.ttf'), 36)
-    imageDraw.text((370, 840), f"ФБ\n{get_degree(items['ФБ'])}", fill=get_color(items['ФБ']), font=font, align="right")
-    imageDraw.text((470, 840), f"СМ\n{get_degree(items['СМ'])}", fill=get_color(items['СМ']), font=font, align="left")
-    imageDraw.text((370, 960), f"ЛР\n{get_degree(items['ЛР'])}", fill=get_color(items['ЛР']), font=font, align="right")
-    imageDraw.text((470, 960), f"ЗД\n{get_degree(items['ЗД'])}", fill=get_color(items['ЗД']), font=font, align="left")
+    font = ImageFont.truetype(os.path.join(ARROWS_DIR, 'Inter.ttf'), 34)
+    font.set_variation_by_name('Bold')
+
+    def drawText(position, k):
+        imageDraw.text(position, get_res_string(items, k), font=font, align="center", fill=(45, 45, 45))
+
+    drawText((330, 890), 'ФБ')
+    drawText((455, 890), 'СМ')
+    drawText((330, 940), 'ЛР')
+    drawText((455, 940), 'ЗД')
     return image
 
 
