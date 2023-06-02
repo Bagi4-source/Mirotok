@@ -32,7 +32,7 @@ def get_percent(x):
 def get_recommendation(selected_cards):
     recommendations = 'Рекомендация:\n'
     for card in selected_cards:
-        recommendations += f"{card.get('REC_RU', '')}\n"
+        recommendations += f"• {card.get('REC_RU', '')}\n\n"
 
     return recommendations
 
