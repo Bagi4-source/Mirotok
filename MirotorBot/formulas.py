@@ -1,5 +1,7 @@
 import random
 from io import BytesIO
+
+import numpy as np
 from PIL import Image, ImageFont, ImageDraw
 import os
 import re
@@ -17,6 +19,71 @@ def get_time(str_time):
     return datetime.fromisoformat(str_time)
 
 
+def get_percent(x):
+    if x >= 19:
+        return 7.35 - (x - 19) * 0.025
+    if x <= -19:
+        return 7.45 - (x + 19) * 0.025
+    if x == 0:
+        return 7.4
+    return 7.4 + x * 0.05 / 19
+
+
+def generate_ph_plot(data):
+    X = []
+    Y = []
+    for item in data:
+        Y.append(get_percent(item.get('result')))
+        X.append(get_time(item.get('create_time')))
+
+    fig, ax = plt.subplots()
+    ax.set_xlabel("График баланса кислотно-щелочной среды", fontsize=22)
+
+    alpha = 0.3
+    ax.axhspan(get_percent(87), get_percent(152), facecolor='#E56635', alpha=alpha)
+    ax.axhspan(get_percent(20), get_percent(87), facecolor='#FEFF58', alpha=alpha + 0.1)
+    ax.axhspan(get_percent(0), get_percent(20), facecolor='#7ED265', alpha=alpha + 0.2)
+    ax.axhspan(get_percent(-19), get_percent(0), facecolor='#69D07E', alpha=alpha + 0.2)
+    ax.axhspan(get_percent(-48), get_percent(-19), facecolor='#689DCF', alpha=alpha)
+    ax.axhspan(get_percent(-76), get_percent(-48), facecolor='#4E3975', alpha=alpha)
+
+    ax.plot(X, Y, marker='o', linestyle='--', color='r', linewidth=2.6)
+    ax.plot(X, [get_percent(-0.2)] * len(X), linestyle='-', color='g', linewidth=1.8)
+
+    ax.xaxis.set_major_formatter(dates.DateFormatter('%d %b'))
+
+    points = []
+    for i in np.linspace(4.025, 7.4, num=9):
+        points.append(i)
+    for i in np.linspace(7.4, 8.875, num=5):
+        points.append(i)
+
+    ax.yaxis.set_major_locator(ticker.FixedLocator(points))
+
+    ax.set_ylabel("pH", fontsize=24, labelpad=140, rotation=0)
+
+    ax.yaxis.set_label_coords(-0.03, 1.03)
+    ax.xaxis.set_label_coords(0.5, -0.05)
+
+    ax.minorticks_on()
+    ax.grid(linestyle='-', color='k', linewidth=1)
+    ax.grid(which='minor', color='k', linestyle=':')
+    fig.set_figwidth(12)
+    fig.set_figheight(8)
+
+    ax.xaxis.tick_top()
+    plt.xticks(rotation=45, fontsize=18)
+    plt.yticks(rotation=0, fontsize=18)
+    ax.set_xlim(max(max(X) - timedelta(days=31), min(X)), max(X))
+    ax.set_ylim(8.875, 4.025)
+
+    bio = BytesIO()
+    bio.name = 'image.png'
+    plt.savefig(bio, format='png')
+    bio.seek(0)
+    return bio
+
+
 def generate_plot(data):
     X = []
     Y = []
@@ -25,29 +92,20 @@ def generate_plot(data):
         X.append(get_time(item.get('create_time')))
 
     fig, ax = plt.subplots()
+    ax.set_xlabel("График баланса энергоемкости", fontsize=22)
 
-    ax.plot(X, Y, marker='o', linestyle='--', color='r')
+    ax.plot(X, Y, marker='o', linestyle='--', color='r', linewidth=2.6)
     ax.plot(X, [-0.2] * len(X), linestyle='-', color='k', linewidth=1.8)
 
-    for i, x in enumerate(X):
-        y = Y[i]
-        if i != len(X) - 1 and X[i] - X[i - 1] < timedelta(hours=1) or \
-                len(X) >= 15 and X[i] - X[i - 1] < timedelta(hours=20):
-            continue
-        plt.annotate(f'{x.strftime("%H:%M")}',
-                     xy=(x, y),
-                     xytext=(x, 160),
-                     fontsize=11, rotation=45)
-
     ax.xaxis.set_major_formatter(dates.DateFormatter('%d %b'))
-    # ax.xaxis.set_major_locator(ticker.MultipleLocator(2 if max(X) - min(X) > timedelta(days=10) else 1))
 
     ax.yaxis.set_major_locator(ticker.MultipleLocator(4))
     ax.yaxis.set_major_locator(ticker.MultipleLocator(19))
 
     ax.set_ylabel("%", fontsize=24, labelpad=140, rotation=0)
 
-    ax.yaxis.set_label_coords(-0.02, 1.01)
+    ax.yaxis.set_label_coords(-0.03, 1.03)
+    ax.xaxis.set_label_coords(0.5, -0.05)
 
     ax.minorticks_on()
     ax.grid(linestyle='-', linewidth=1.6)
@@ -57,6 +115,7 @@ def generate_plot(data):
     fig.set_figwidth(12)
     fig.set_figheight(8)
 
+    ax.xaxis.tick_top()
     plt.xticks(rotation=45, fontsize=18)
     plt.yticks(rotation=0, fontsize=18)
     plt.xlim(max(max(X) - timedelta(days=31), min(X)), max(X))
@@ -153,7 +212,6 @@ async def formula4(selected_cards):
     negative = {}
 
     for key, value in result.items():
-        get_image(result).show()
         if value < 0:
             negative[key] = value
         if value > 0:
