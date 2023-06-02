@@ -882,10 +882,10 @@ async def web_app(message: types.Message):
     image = image.read()
     arrows = arrows.read()
 
+    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}"
+
     media = types.MediaGroup()
-    media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
-                                      f"Баланс кислотно-щелочной среды: {get_percent(power)}pH\n"
-                                      f"\n{f1}\n\n{f4}")
+    media.attach_photo(BytesIO(plot), text)
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))
@@ -893,10 +893,15 @@ async def web_app(message: types.Message):
     await message.answer_media_group(media=media)
 
     user_info = f"@{message.from_user.username}\n{message.from_user.first_name} {message.from_user.last_name}\n#{message.from_user.id}"
+
+    media = types.MediaGroup()
+    media.attach_photo(BytesIO(plot), f"{user_info}\n\n" + text)
+    media.attach_photo(BytesIO(plot_ph))
+    media.attach_photo(BytesIO(image))
+    media.attach_photo(BytesIO(arrows))
+    media.attach_photo(types.InputFile('table.png'))
+
     for doc in DOCTORS:
-        media = types.MediaGroup()
-        media.attach_photo(BytesIO(plot), f"{user_info}\n\n{names}\n\nРезультат {power}%\n\n{f1}\n\n{f4}")
-        media.attach_photo(BytesIO(image))
         await bot.send_media_group(doc, media=media)
 
 
