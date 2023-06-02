@@ -26,7 +26,7 @@ def get_percent(x):
         return 7.45 - (x + 19) * 0.025
     if x == 0:
         return 7.4
-    return 7.4 + x * 0.05 / 19
+    return round(7.4 + x * 50 / 19) / 1000
 
 
 def generate_ph_plot(data):
