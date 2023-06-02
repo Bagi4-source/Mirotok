@@ -1,0 +1,45 @@
+version: '3.9'
+# docker network create --gateway 192.168.10.1 --subnet 192.168.10.0/24 backend
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "sgucr+cq*y"
+    networks:
+      backend:
+        ipv4_address: 192.168.10.4
+  server:
+    image: german/server
+    build: ./Mirotor
+    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && echo \"from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username='german').exists() or User.objects.create_superuser('german', 'admin@myproject.com', 'germanAdmin')\" | python manage.py shell && python3 manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      backend:
+        ipv4_address: 192.168.10.3
+    restart: always
+  bot:
+    image: german/bot
+    build: ./MirotorBot
+    restart: always
+    networks:
+      backend:
+        ipv4_address: 192.168.10.2
+    depends_on:
+      - server
+    environment:
+      API_TOKEN: '6197684656:AAEPSsXccvy4rekfmFUTDaqAaJTZz-RthVU'
+      API_URL: 'http://192.168.10.3:8000'
+      ADMIN_LIST_LIMIT: 3
+      ADMINS: 554116381,282283626
+      DOCTORS: 282283626
+networks:
+  backend:
+    external: true
