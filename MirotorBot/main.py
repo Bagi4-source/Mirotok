@@ -979,7 +979,7 @@ async def tariffs(query: types.CallbackQuery):
     if not selected_cards:
         return await query.answer(f"Непредвиденная ошибка!")
 
-    return await query.message.edit_text(get_recommendation(selected_cards))
+    return await bot.send_message(query.message.from_user.id, get_recommendation(selected_cards))
 
 
 if __name__ == '__main__':
