@@ -906,7 +906,9 @@ async def web_app(message: types.Message):
     media.attach_photo(BytesIO(arrows))
     media.attach_photo(types.InputFile('table.png'))
     await message.answer_media_group(media=media)
-    await message.answer(get_recommendation(selected_cards))
+    keyboard = InlineKeyboardMarkup()
+    keyboard.add(InlineKeyboardButton(text="Подробнее", callback_data=f"recommendations_{data}"))
+    await message.answer('Рекомендации', reply_markup=keyboard)
     user_info = f"@{message.from_user.username}\n{message.from_user.first_name} {message.from_user.last_name}\n#{message.from_user.id}"
 
     media = types.MediaGroup()
@@ -964,7 +966,20 @@ async def manual_test(message: types.Message):
     media.attach_photo(BytesIO(arrows))
     media.attach_photo(types.InputFile('table.png'))
     await message.answer_media_group(media=media)
-    await message.answer(get_recommendation(selected_cards))
+    keyboard = InlineKeyboardMarkup()
+    keyboard.add(InlineKeyboardButton(text="Подробнее", callback_data=f"recommendations_{match}"))
+    await message.answer('Рекомендации', reply_markup=keyboard)
+
+
+@dp.callback_query_handler(text_contains="recommendations_")
+async def tariffs(query: types.CallbackQuery):
+    match = query.data.replace("recommendations_", "")
+    match = eval(match)
+    selected_cards = select_card(match)
+    if not selected_cards:
+        return await query.answer(f"Непредвиденная ошибка!")
+
+    return await query.answer(get_recommendation(selected_cards))
 
 
 if __name__ == '__main__':
