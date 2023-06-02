@@ -11,7 +11,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 import csv
-from formulas import formula1, formula2, formula3, formula4, generate_plot, get_time
+from formulas import formula1, formula2, formula3, formula4, generate_plot, get_time, generate_ph_plot, get_percent
 from io import BytesIO
 from aiogram.utils.exceptions import BotBlocked
 
@@ -822,7 +822,6 @@ async def post_result(telegram_id, result):
 
 async def get_plot(telegram_id):
     async with aiohttp.ClientSession(trust_env=True) as session:
-        result = []
         async with session.get(f'{API_URL}/results/',
                                params={
                                    'telegram_id': telegram_id,
@@ -832,7 +831,7 @@ async def get_plot(telegram_id):
             if r.ok:
                 res = await r.json()
                 result = res.get('results', [])
-                return generate_plot(result)
+                return generate_plot(result), generate_ph_plot(result)
 
 
 @dp.message_handler(content_types=['web_app_data'])
@@ -868,16 +867,20 @@ async def web_app(message: types.Message):
     power = await formula2(selected_cards)
     await post_result(message.from_user.id, power)
 
-    plot = await get_plot(message.from_user.id)
+    plot, plot_ph = await get_plot(message.from_user.id)
     image, _ = await formula3(selected_cards)
     arrows, f4 = await formula4(selected_cards)
 
     plot = plot.read()
+    plot_ph = plot_ph.read()
     image = image.read()
     arrows = arrows.read()
 
     media = types.MediaGroup()
-    media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат {power}%\n\n{f1}\n\n{f4}")
+    media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
+                                      f"Баланс кислотно-щелочной среды: {get_percent(power)}pH\n"
+                                      f"\n{f1}\n\n{f4}")
+    media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))
     media.attach_photo(types.InputFile('table.png'))
