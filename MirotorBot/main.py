@@ -897,9 +897,7 @@ async def web_app(message: types.Message):
     image = image.read()
     arrows = arrows.read()
 
-    recommendation = get_recommendation(selected_cards)
-
-    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}\n\n{recommendation}"
+    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}"
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), text)
@@ -908,7 +906,7 @@ async def web_app(message: types.Message):
     media.attach_photo(BytesIO(arrows))
     media.attach_photo(types.InputFile('table.png'))
     await message.answer_media_group(media=media)
-
+    await message.answer(get_recommendation(selected_cards))
     user_info = f"@{message.from_user.username}\n{message.from_user.first_name} {message.from_user.last_name}\n#{message.from_user.id}"
 
     media = types.MediaGroup()
@@ -940,8 +938,6 @@ async def manual_test(message: types.Message):
     if not selected_cards:
         return await message.answer(f"Непредвиденная ошибка!")
 
-    recommendation = get_recommendation(selected_cards)
-
     names = "Вы выбрали репродукции картин Мироток:\n"
     names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
     names += "\nОписание картин в таблице...\nАвтор живописных картин Бендицкий Игорь Эдуардович | BENDITSKIY IGOR"
@@ -962,12 +958,13 @@ async def manual_test(message: types.Message):
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
                                       f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n"
-                                      f"\n{f1}\n\n{f4}\n\n{recommendation}")
+                                      f"\n{f1}\n\n{f4}")
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))
     media.attach_photo(types.InputFile('table.png'))
     await message.answer_media_group(media=media)
+    await message.answer(get_recommendation(selected_cards))
 
 
 if __name__ == '__main__':
