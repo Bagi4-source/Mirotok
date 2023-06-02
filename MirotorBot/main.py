@@ -837,7 +837,10 @@ async def get_plot(telegram_id):
 def select_card(data):
     result = []
     for key in data:
-        result.append(cards.get(f"{key}", {}))
+        card = cards.get(f"{key}", {})
+        if card in result:
+            return None
+        result.append(card)
 
     return result
 
@@ -863,7 +866,16 @@ async def web_app(message: types.Message):
     for item in data:
         if not item:
             return await message.answer(f"Непредвиденная ошибка!")
+
+    for i in data:
+        i = int(i)
+        if i > 49 or i < 1:
+            return await message.answer("Номера картин должны быть от 1 до 49")
+
     selected_cards = select_card(data)
+
+    if not selected_cards:
+        return await message.answer(f"Непредвиденная ошибка!")
 
     names = "Вы выбрали репродукции картин Мироток:\n"
     names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
@@ -915,10 +927,14 @@ async def manual_test(message: types.Message):
         return await message.answer("Должно быть 5 чисел")
 
     for i in match:
+        i = int(i)
         if i > 49 or i < 1:
             return await message.answer("Номера картин должны быть от 1 до 49")
 
     selected_cards = select_card(match)
+    if not selected_cards:
+        return await message.answer(f"Непредвиденная ошибка!")
+
     names = "Вы выбрали репродукции картин Мироток:\n"
     names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
     names += "\nОписание картин в таблице...\nАвтор живописных картин Бендицкий Игорь Эдуардович | BENDITSKIY IGOR"
