@@ -954,7 +954,7 @@ async def manual_test(message: types.Message):
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
-                                      f"Баланс кислотно-щелочной среды: {get_percent(power)}pH\n"
+                                      f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n"
                                       f"\n{f1}\n\n{f4}")
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
