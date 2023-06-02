@@ -1,50 +1,775 @@
-N,Pozv_Structura,Kol-vo,Power,Name_Ru,Q_Rus,EOB
-1,C2.C3.C4.C5. T3.T4.T5.T6.T7. T12 L1.L2,13,52%,Альпийские горы,Умение работать с источником энергии данной при рождении.,ЛРЗД
-2,C1 T1.T2.T3. T8.T9.T10.T11.T12. L1L2  S(S1S2),12,48%,Букет Роз,Умение быть благодарным Матери без всяких но!,ЗДСМ
-3,C3C4. L1.L2.L3.L4.L5,8,32%,Вино Испании,Умение создавать гармоничные отношения в реальной жизненной ситуации.,ЛРФБ
-4,C3.C4.C5.C6.C7. T1.T2.T3 L3.L4.L5  S (S1S2S3),12,48%,"Восход, Начало движения",Умение быть готовым принять решение  и  действовать.,ЛРФБ
-5,C6.C7 T1.T2.T3.T4.T5.T6.T7.T8,11,44%,Гавань,"Умение организовать свой рабочий процесс, чтобы работа приносила удовольствие.",ЗДСМ
-6,C2.C3.C 4.C5.C6.C7 L1.L2.L3.4.L5,12,48%,Глубина Души,Умение найти свой социальный уровень.,ЛРСМ
-7,C1.C2.C3 C7 T1.T2T3T4T5T6T7T8T9,14,56%,Горное озеро,Уметь видеть вокруг себя не ограниченное  пространство возможностей.,ЛРЗДСМФБ
-8,C4 T8T9T10T11T12. L1L2L3,10,40%,Деревенский пейзаж,"Умение вспомнить детство, испытать тепло ,свободу и вернуться в реальную жизнь.",ЗДСМ
-9,C3C4C5C6C7 T1T2T3T4T5. L3L4,13,52%,Дом рыбака,Умение соблюдать  баланс внешней и внутренней энергии в  организме.,ЛРЗДСМФБ
-10,C3C4C5C6C7 T9T10T11. L3L4L5 S ( S1),12,48%,Живое море,Умение принимать жизненные трудности реальной жизни.,ЛРФБ
-11,C1C2 C6 C7. T3T4T7T 8T11.T12. L1L4L5   ,15,60%,Зимний букет,Умение ограничивать общение для концентрации жизненной энергии.,ЗД
-12,C 1C2C3C4C5C6C7 T8T 9T10T11T12 L1L2,15,60%,Золотое поле,Умение оперативно распределить жизненную энергию на хранение и реализацию.,ФБ
-13,C4C5C6C 7 T 1T2T3. L2.L3L4  S (S1S2),11,44%,Золотые рыбы,Умение адекватно сделать выбор из своих желаний.,ЛР
-14,C1C2C3. T3T4T5T12. L1L2L3L4  ,13,52%,Зрелые плоды,Уметь найти объединяющий фактор между людьми разных профессий.,ЛРФБ
-15,C2C3. T4T5T6T10T11T12. L1L2L3,12,48%,Умеренность чувств,Умение видеть красоту в простоте.,СМФБ
-16,C7. T1T2T3T4T5T6T7,9,36%,Корабли,Умение отличить горделивость от честолюбия!,ЛРСМ
-17,C7. T1T2T4Y5T6T7. L3L4L5. S ( S1S3),11,44%,Кот и хозяйка,Умение быть в диалоге в семье.,ЛРСМ
-18,C1. L3L4L5. ,5,20%,Крыши,Умение справляться с  состоянием печали при негативных ситуациях.,ЛРЗДСМФБ
-19,C5C6C7. T1T4T5T6T7T8T9T10. L4L5,14,56%,Лесная поляна,"Умение найти место , в котором можно испытать творческий подъем.",ЛРЗД
-20,"C1C2,C3. T4T5T6T7T8T9T10T11,T12  ",13,52%,Лошадь и водопад,Умение требовать от собеседника  быть лаконичным и  искренним.,ЛРФБ
-21,"C6C7. T1,T2,T3,T4T5T6. L 3L4L5  S (S1)",12,48%,Мексиканский залив,"Умение ждать  событий, которые могут и  не произойти.",СМ
-22,C4C5C6. T5T6T7T8T9T10T11T12   ,12,48%,Мир женщины,Умение принять стабильность и постоянства жизненных процессов.,СМ
-23,C3C4C5C6. T2 T3T4T7T8T9T10. L 2L3L4. S (S1S2S3),15,60%,Морской берег,Умение быть категоричным - Да или нет!,ЛРФБ
-24,C2C3. T2T3T4T5T6T7T8T9T10. L5.  S (S1S2),13,52%,Навстречу судьбе,Умение отличить  реальное или имитационное движений к цели.,ЛРСМ
-25,C1C2C4C5 T1T2T4T5T6T7T8 L2L3L4L5.  S (S1),16,64%,Настроение,Умение отличить лицемерие или искренность в добродушии.,ЛРЗД
-26,C4C5C5C7. T1T2T3T7T8. L3L4L5. S (S1),13,52%,Одинокий парус,Умение самостоятельно идти по жизни.,ЛРЗДФБ
-27,C3C4. T3T4T5T6T7T8T9T10 L4L5,13,52%,Отражение осени,"Умение смотреть в прошлое, с благодарностью и без обиды.",ЗДСМ
-28,C1C2C3C4C5C6C7. T1 L1L2L3L4L5. S (S1 S2),14,56%,Париж,Умение быть искренним с самим собой.,ЗДФБ
-29,C1C6C7. T1T2T3T4T5T6. L4L5. S(S1),12,48%,Первый снег,Умение  быть готовым к неожиданным жизненным ситуациям.,ЛРФБ
-30,C3C4. T12. L1,5,20%,Петербургские зонтики,"Умение управлять своим миром, чтобы им не управлял кто-то другой.",ЛРФБ
-31,C4. L2L3L4L5,6,24%,Подводный Мир,Умение найти место в хаосе жизни.,ЛРФБ
-32,T3T4T5T6T7T8T9T10. L4L5. S ( S1),11,44%,Подсолнухи на столе,Умение быть готовым к принятию новых идей.,ЛРЗДСМ
-33,"C1C2,C5C6C7. T1T2T3T4T5T6T8T9T10T11T12 L1.S(S1)",18,72%,Поезд в горах,Умение быть уверенным и активно убеждать в своих фантастических идеях.,ЛРЗДСМФБ
-34,C4C5C6. T3T4T5. L5. S (S1S2),8,32%,Полет попугая на джунглями,Умение ограничивать излишнюю болтливость.,ЛРФБ
-35,C5C6. T3T4T5T6T7T8T9T10 L4L5. S (S1),13,52%,Подсолнухи на даче,Умение  создать оригинальный образ жизни.,ЛРСМФБ
-36,C1C2. L1L2L3L4,7,28%,Пустыня,Умение  идти постепенно и стабильно по жизни.,ЛРЗД
-37,T9T10T11T12. L1L2L3L4L5.S (S1),10,40%,Роза и Янтарь,Умение совместить в себе молодость и опытность жизни.,ЗДСМ
-38,C1C2. T3T4. L5. S (S1),6,24%,Ромашки в поле,Умение собирать энергию творческого потенциала в период застоя.,ЛРЗД
-39,T4T5T6T7T8T9. L3L4L5.S ( S1S2),10,40%,Сияющая Роза,Умение активизировать свою сакральную истину.,ЗД
-40,C1C2. T10T11T12. L1L2L4L5.S (S1S2S3),10,40%,Солнечная Дорожка,Умение выстраивать отношения между мужчиной и женщиной.,СМ
-41,C6C7. T1T2T6T7T8T9T10T11T12,12,48%,Старая Мельница,Умение принятия здравых консервативных идей.,ЛРСМФБ
-42,C6C7. T1T2T3T4T5T6. L2L3L4L5. S1,13,52%,Старый Замок,Умение увидеть мечты в реальной жизни.,СМФБ
-43,L4L5. S (S1S2S3S4S5) ,3,12%,Теплый Вечер,Умение ограничивать конфликт между мужским и женским началом.,ЗД
-44,C6C7. T1T2Y3T4T5T6T7T8T9T10T11T12 L1L2L3,18,72%,Течение Времени,"Умение осуществлять диалог между прошлыми, реальными и будущими событиями жизни.",ЛРСМ
-45,C3C4C5    T2T3T4T5T6T7T8T9T10. L3L4. S ( S1S3),15,60%,Цветы в Стеклянной Вазе,Умение адекватно вмешиваться в жизнь других людей.,ЛРЗД
-46,C1C2.  T3T4T5T6T7T8T9T10  L3L4L5. S ( S1),14,56%,Цветы и водопад,"Умение дозировать поток эмоций, чтобы не нарушить тонкий мир человеческих отношений.",СМФБ
-47,C1C2C3C4C5C6C7   T7T8T9. L4L5. S  (S1S2S3),13,52%,Энергия Исаакиевского Собора,Умение делегировать полномочия.,ЛР
-48,C1C2C3C4C5C6C7. T3T7T8T9  L1L4L5. S (S1S2),15,60%,Южный город,"Умение понимать, что  жизнь всегда будет сложная, что нет мест где-то лучше и без  трудностей!",ЛРФБ
-49,T3T4T5T6.     L2L3L4L5.  S (S1S2S3),9,36%,Незнакомка,Умение детально планировать будущее.,СМ
+N,Pozv_Structura,Kol-vo,Power,Name_Ru,Q_Rus,EOB,REC_RU,REC_EN
+1,C2.C3.C4.C5. T3.T4.T5.T6.T7. T12 L1.L2,13,52%,Альпийские горы,Умение работать с источником энергии данной при рождении.,ЛРЗД,"1. Лежа на спине. Согните обе ноги в коленных и тазобедренных суставах и  
+зафиксируйте их сцепленными в кистях руками на уровне колен. Сделайте медленные 
+качающиеся движения в стороны. Затем опустите ноги    на пол. 
+2. Лежа на спине. Поднимите прямые ноги вверх, разведите в стороны и поочередно 
+согните и разогните ноги в коленном суставе, имитируя ходьбу.  При выполнении 
+упражнения положение стопы можно менять. 
+Дыхание свободное. 
+Упражнения  выполните по  5-10 раз.","1.  Lying flat on back. Bend both legs in the knee and hip joints and fix them by arms licked in 
+hands at knee-height. Make slow swinging movements to the sides. Then put your legs down 
+on the floor. 
+2. Lying flat on back. Lift your straight legs up, put them aside and in turns bend and unbend 
+the legs in the knee joint, simulating the walk. The foot position may be changed while doing 
+this exercise. 
+Easy breathing. 
+Do exercises 5-10 times. 
+"
+2,C1 T1.T2.T3. T8.T9.T10.T11.T12. L1L2  S(S1S2),12,48%,Букет Роз,Умение быть благодарным Матери без всяких но!,ЗДСМ,"1. Стоя. Турник (можно использовать дверной проем) Ноги на ширине плеч. Руками 
+возьмитесь за турник (проем), руки параллельны друг другу. В этом положении 
+«провалитесь» вперед, затем вернитесь в исходное положение и опустите руки вниз.   
+2. Стоя. Встать на одно колено,  другую ногу  согните  и уприте  на стопу. Поднимите 
+руки вверх (ладонями вперед), соедините лопатки и прогнитесь немного назад. 
+Опустите руки, вернитесь в исходное положение.  
+Дыхание свободное   
+Упражнения выполните по  5-10 раз.","1. To stand. Horizontal bar (you can use the doorway) Legs shoulder width apart. Hands grasp 
+the horizontal bar (opening), the hands are parallel to each other. In this position, “fall” 
+forward, then return to the starting position and lower your hands down. 
+2. To stand. To stand on one knee, bend the other leg and rest on the foot. Raise your hands up 
+(palms forward), connect the shoulder blades and bend a little back.  Lower your hands, return 
+to starting position 
+Easy breathing  
+Do exercises 5-10 times.   
+"
+3,C3C4. L1.L2.L3.L4.L5,8,32%,Вино Испании,Умение создавать гармоничные отношения в реальной жизненной ситуации.,ЛРФБ,"1.  Стоя. Сделайте наклон вперед под углом 90 градусов. Поверните корпус туловища 
+вправо, опустите прямую левую руку вниз, а правую руку прямую  поднимите вверх. 
+Затем поверните  корпус  влево, при этом левую руку поднимите вверх, а правую 
+опустите вниз. 
+2. Стоя. Наклонить туловище вперед. Вытяните обе  прямые руки вперед. Поочередно 
+поднимайте их вверх и возвращайте в горизонтальное положение. Дополнить это 
+упражнение движениями рук в горизонтальном направлении, имитирующими плавание. 
+Дыхание свободное. 
+Упражнения выполните по  5-10 раз.","1. To stand. Bend forward with the angle of 90 degrees. Turn your body to the right, put your 
+straight left arm down, and lift up your right straight arm. Then turn your body to the left, in 
+addition lift up your left arm and put down the right arm. 
+2. To stand.  To bend your body forward. Pull both straight arms forward. In turns lift them up 
+and return them in the horizontal position. To add this exercise with movements of arms in a 
+horizontal direction, imitating swimming. 
+Easy breathing. 
+Do exercises 5-10 times. 
+"
+4,C3.C4.C5.C6.C7. T1.T2.T3 L3.L4.L5  S (S1S2S3),12,48%,"Восход, Начало движения",Умение быть готовым принять решение  и  действовать.,ЛРФБ,"1.Сядьте. Руки поставьте за спиной с упором кистей на пол, ноги прямые. Поднимите 
+ноги от пола и разведите их в стороны, затем перекрестите  между собой и снова 
+разводите в стороны. Опустите ноги на пол и сядьте прямо.  
+2.Стоя. Руки прямые держите перед собой параллельно. Разведите руки в стороны и 
+резким движением  впереди себя перекрестите между собой, затем снова разводите в 
+стороны. После выполнения упражнения  встать прямо, руки вдоль тела.  
+Дыхание свободное. 
+Упражнения выполните по  5-10 раз.","1. Sit down. Put your arms behind the back with your hands on the floor, legs straight. Lift 
+your legs from the floor and put them apart, then intersect them between each other and again 
+put them apart. Put your legs on the floor and sit straight.  
+2. To stand. Hold the straight arms in front of you in parallel. Put your arms aside and with a 
+sudden movement intersect them between each other in front of you, then again put them 
+apart. After completion of the exercise stand straight, arms along your body. 
+ Easy breathing.  
+Do exercises 5-10 times."
+5,C6.C7 T1.T2.T3.T4.T5.T6.T7.T8,11,44%,Гавань,"Умение организовать свой рабочий процесс, чтобы работа приносила удовольствие.",ЗДСМ,"1. Встаньте на колени.  Поднимите руки вверх (ладонями вперед).  Соедините лопатки и 
+прогнитесь немного назад. Опустите руки, вернитесь в исходное положение. 
+2. Встаньте на колени.  Стоя на одном колене поставить вторую ногу на стопу. 
+Поднимите руки вверх (ладонями вперед).  Соедините лопатки и прогнитесь немного 
+назад. Опустите руки, вернитесь в исходное положение. Меняем колени. 
+3.Стоя. Кисти  рук положите на  плечи. Выполните круговые движения в плечевых 
+суставах вперед и назад.  
+Дыхание свободное.   
+Упражнения выполните по  5-10 раз.","1.  Stand on knees, put your arms up (palms forward). Join your scapulae and roll a little back. 
+Put your arms down, recover place. 
+2. Get on your knees. Standing on one knee, put the second foot on the foot. Raise your hands 
+up (palms forward). Connect the shoulder blades and bend a little back. Lower your hands, 
+return to starting position. Changing the knees. 
+ 3. Standing up.  Put your hands on your shoulders.  Perform circular movements in the 
+shoulder joints back and forth.  
+Easy breathing 
+Do exercises 5-10 times."
+6,C2.C3.C 4.C5.C6.C7 L1.L2.L3.4.L5,12,48%,Глубина Души,Умение найти свой социальный уровень.,ЛРСМ,"1.Лечь на спину, голова лицом верх, руки лежат свободно в стороны, ноги лежат 
+свободно в стороны. Вдохнуть, надуть живот и задержать дыхание.  Выдохнуть, втянуть 
+живот в себя. Повторить  упражнение 3-5 раз. 
+2. Встать на колени, ноги вместе, спина прямая. Поднимите руки вверх, сделайте вдох, 
+затем опустите руки вниз, сделайте выдох. 
+3. Встать на колени. Отведите руки в стороны сделайте вдох, опустите руки вниз, 
+сделайте выдох. Затем встаньте, выпрямитесь и свободно подышите.    
+Упражнение  выполните   5-10 раз.","1. Lay on the back, a head face up, arms lay freely apart, legs lay freely apart. Breathe in, blow 
+out your stomach and hold your breath. Breathe out, gather in stomach. Repeat the exercise 3-
+5 times. 
+2. Stand on your knees, feet together, straight back. Put your arms up, take a breath, then put 
+your arms down, breathe out. 
+3. Stand on knees. Extend arms sideward and breathe in, put your arms down, breathe out 
+.Then stand, straighten up and breathe easily.  
+Do this exercise 5-10 times."
+7,C1.C2.C3 C7 T1.T2T3T4T5T6T7T8T9,14,56%,Горное озеро,Уметь видеть вокруг себя не ограниченное  пространство возможностей.,ЛРЗДСМФБ,"1. Встаньте прямо, ноги вместе. Медленно наклонитесь вперед до болевого  ощущения. 
+Затем медленно разогнитесь и вернитесь в исходное положение.  
+2. Стать  спиной к стене. Ноги вместе и максимально прижаты к стене пятками. Руки 
+плотно прижаты к стене для стабильной опоры тела.  Поочередно поднимаем и сгибаем 
+в колене каждую ногу и возвращаем в исходное положение, прижимая пятку к стене. 
+Стараться держать равновесие.  
+Дыхание свободное   
+Упражнения повторите по  3–5 раз.","1.  Stand straight, feet together. Lean forward slowly till sensation of pain. Then slowly 
+unbend and recover place.  
+2. Stand with your back to the wall.  Feet together and cuddle against the wall with your heels 
+as much as possible.  Hands firmly pressed against the wall for stable support to the body.  
+Alternately lift and bend each leg at the knee and return to the starting position by pressing the 
+heel against the wall.  Try to keep your balance. 
+Easy breathing 
+Repeat the exercises 3–5 times."
+8,C4 T8T9T10T11T12. L1L2L3,10,40%,Деревенский пейзаж,"Умение вспомнить детство, испытать тепло ,свободу и вернуться в реальную жизнь.",ЗДСМ,"1.Встаньте прямо, поставьте ноги на ширину плеч, затем руки согните в локтях и 
+кулачками упритесь в область лопаток, выгните вперед грудной отдел и живот. 
+Выпрямитесь, примите в исходное положение. 
+2. Встаньте прямо. Упритесь кулачками в спину в область поясничного отдела и снова 
+прогнитесь дугой, но при этом согните немного ноги в коленях.  Вернитесь в исходное . 
+Дыхание свободное   
+Упражнения выполните по 3-5 раз.","1. Stand straight, put your feet at shoulder length, then bend your arms in elbows and set the 
+fists against the zone of scapulae, bend forward the thoractic segment and stomach. Unbend, 
+recover yourself. 
+2. Stand straight .Set the fists against the back in the zone of the lumbar spine and arch 
+yourself, but at that slightly bend the legs in the knees. Recover place. 
+Easy breathing 
+Do the exercises 3-5 times.   
+"
+9,C3C4C5C6C7 T1T2T3T4T5. L3L4,13,52%,Дом рыбака,Умение соблюдать  баланс внешней и внутренней энергии в  организме.,ЛРЗДСМФБ,"1.Встаньте прямо, лопатки сведите вместе, чтобы раскрыть грудную клетку. Руки 
+согните в локтях, кисти рук положите на плечевые суставы. Очень медленно вращайте 
+локти вокруг плечевого сустава – вначале в одну сторону, а затем в другую. Старайтесь 
+максимально опустить вниз локти в нижнем положении и максимально их поднять в 
+верхнем положении. 
+2.Встаньте прямо. Лопатки сведены, руки согнуты в локтях, кисти – на плечевых 
+суставах. Подбородком достаньте грудину и удержите это положение 5–6 секунд, затем 
+вернитесь в исходное положение и расслабьтесь, опустив руки.  
+Дыхание свободное   
+Упражнения выполните  по 3–5 раз.","1. Stand straight; join the scapulae together in order to open the chest. Shorten your arms in 
+elbows, put your hands on the shoulders. Rotate the elbows around the shoulder-joint very 
+slowly– at first to the one side, then to the other side. Try to put down the elbows to the 
+maximum in down position and lift them up to the maximum in top position. 
+2. Stand straight. The scapulae are joined together, arms shortened in elbows, hands on the 
+shoulder-joints. Reach the chest with your chin and hold this position for 5–6 seconds, then 
+recover yourself and relax, hands down.  
+Easy breathing 
+Do the exercises 3-5 times."
+10,C3C4C5C6C7 T9T10T11. L3L4L5 S ( S1),12,48%,Живое море,Умение принимать жизненные трудности реальной жизни.,ЛРФБ,"1.Встаньте прямо. Проведите комплекс  дыхания “Волна”. Начните дышать  животом, 
+далее перейдите на полное дыхание, а затем – на грудное, после этого – опять на полное 
+дыхание, затем вернитесь к нижнему дыханию животом. Волна дыхания должна быть 
+плавной, ощутите свободу своего  дыхания. 
+2. Сесть на стул. Спина прямая. Кладем кисти рук на  сиденье стула по бокам и 
+поднимем тело вверх, делаем вдох. Затем опускаем тело вниз, делаем выдох.    
+Упражнения выполните по 5-10 раз.","1. Stand straight. Do the breathing complex “Wave”. Start breathing with the stomach, then 
+change into the full breathing, and then – for the chest breathing, after that – again for the full 
+breathing, then return to the lower breathing by the stomach. The wave of breathing must be 
+smooth, feel the freedom of your breathing. 
+2. Sit on a chair, straight back. Put the hands on the sit on each side and lift our body up, 
+inhale. Then put the body down, exhale.    
+Do this exercise 5-10 times."
+11,C1C2 C6 C7. T3T4T7T 8T11.T12. L1L4L5   ,15,60%,Зимний букет,Умение ограничивать общение для концентрации жизненной энергии.,ЗД,"1.Лежа на спине, руки вдоль туловища, ноги согните в коленях, стопы на полу. 
+Медленно  поверните колени от центра в одну сторону,  верните их в центральное 
+положение.  Затем поверните колени в другую сторону и верните в центральное 
+положение. 
+2.Лежа на спине, приподнимите согнутые в коленях ноги, соедините их вместе и 
+обхватите руками; приподнимите голову и плечи, при этом подбородок старайтесь 
+прижать к груди.  В этом положении всем телом покачайтесь свободно в разные 
+стороны. Вернитесь в  исходное положение.  
+Дыхание свободное.  
+Упражнения выполните по 5-10 раз.","1. Lying flat on back, arms along the body, bend the legs in the knees, feet on the floor. Slowly 
+turn the knees from the center to the one side, put them back to the central position. Then turn 
+the knees to the other side and put them back to the central position. 
+2. Lying flat on back, lift up the legs bent in the knees, join them together and throw your arms 
+around them; slightly lift up the head and shoulders, at that try to press the chin to your chest. 
+In this position sway freely by the whole body to the different sides. Recover place.  
+Easy breathing.  
+Do the exercises 5-10 times.       
+"
+12,C 1C2C3C4C5C6C7 T8T 9T10T11T12 L1L2,15,60%,Золотое поле,Умение оперативно распределить жизненную энергию на хранение и реализацию.,ФБ,"1.Cтоя, ноги на ширине плеч, кисти рук положите на поясницу так, чтобы большой 
+палец был направлен назад, а четыре другие пальца – вперед. Выполните круговое 
+движение тазом и корпусом в одну сторону, затем в другую. В процессе выполнения 
+этого движения можете слегка напрягать и расслаблять ягодицы.  
+2.Встаньте прямо. Медленно наклонитесь корпусом влево. Затем выполните наклон 
+вправо. 
+Дыхание сводное.  
+Упражнения выполните по  5-10 раз.","1. Stand. From the standing position, legs shoulder-width apart, put the hands on the low back 
+so that the thumb is directed backwards, and other four fingers are forward. Rotate the hips 
+and the core to the one side, then to the other. During this exercise you can slightly flex and 
+relax the buttocks.  
+2. Stand straight. Slowly bend your core to the left. Then bend right.  
+ Easy breathing         
+Do the exercises по  5-10 раз."
+13,C4C5C6C 7 T 1T2T3. L2.L3L4  S (S1S2),11,44%,Золотые рыбы,Умение адекватно сделать выбор из своих желаний.,ЛР,"1.Встаньте  у стены. Прижмите к стене спину, лопатки, руки, ягодицы - это восстановит 
+симметрию в организме. Сделайте дыхание “волна”- надуйте живот и втяните грудную 
+клетку, а затем, наоборот, надуйте грудную клетку и втяните живот. Упражнение 
+выполнять медленно. 
+2.Лечь на спину, руки вдоль туловища. Руки медленно тащите по полу вверх – вдох, 
+затем возвратите руки в исходное положение – выдох. 
+3.Лежа на спине, ноги согните в коленях и медленно поднимите вверх таз. Затем 
+вернитесь в исходное положение.  
+Упражнения повторите по  5–10 раз.","1. Stand at the wall. Press the back, scapulae, arms, buttocks to the wall- it will restore the 
+symmetry in the body. Do breathing “wave”-blow out the stomach and gather in chest, and 
+then, vice versa, blow out the chest and gather in stomach. Do the exercise slowly. 
+2. Lie on the back, arms along the body. Pull the arms up slowly on the floor – inhale, then put 
+your arms back in the starting position – exhale. 
+3. lying flat on back, bend your legs in the knees and slowly lift your hips up. Then recover 
+place.  
+Repeat the exercises 5–10 times. 
+"
+14,C1C2C3. T3T4T5T12. L1L2L3L4  ,13,52%,Зрелые плоды,Уметь найти объединяющий фактор между людьми разных профессий.,ЛРФБ,"1.Встать, ноги вместе, стопы прижаты друг к другу. Подняться на носки и потянуться 
+вверх руками - сосчитайте до 5. Медленно опуская руки, опуститесь на пятки. 
+2. Встать, пятки вместе, носки врозь, руки на поясе, лопатки соединить вместе. 
+Выполнить поворот туловища влево (правый локоть выдвинуть вперед), вернитесь в и. 
+п. Поворот вправо (вперед -  левый локоть). Вернуться в исходное положение.  
+Дыхание  свободное.   
+Упражнения повторите по  3-5 раз.","1. Stand, feet together, feet are pressed to each other. Lift on tiptoes and stretch yourself with 
+the hands – count to 5. Slowly putting your arms down, stand on heels. 
+2. Stand, heels together, toes out, arms at hips, join the scapulae together. Turn the body to the 
+left (push forward the right elbow), recover place. Turn to the right (the left elbow is forward). 
+Recover place.  
+Easy breathing. 
+Repeat the exercises 3-5 times."
+15,C2C3. T4T5T6T10T11T12. L1L2L3,12,48%,Умеренность чувств,Умение видеть красоту в простоте.,СМФБ,"1. Сидя  на стуле. Спина плотно прижата к спинке стула. Правую руку положить 
+ладонью на затылок, а левую руку - ладонью на поясницу, вдох, надуть  живот. Затем 
+опустить руки вдоль тела - выдох.  Поменять руки – левую на затылок, правую на 
+поясницу, вдох. Повторите  упражнение 5 раз. 
+2. Сидя на стуле. Правая рука на поясе, левая рука поднята вверх. Сделать вдох и легкий 
+наклон влево. Вернитесь в исходное положение. Выдох. Затем поменяйте руки местами,  
+сделайте  вдох и наклон вправо.   
+Упражнение  повторите   5-10 раз.","1.  Sitting on a chair. The back is closely presses to the chair back. Put the right hand by palm 
+on the back of the head, and the left hand – by palm on the low back, inhale, and blow out the 
+stomach. Then arms along the body -exhale. Change the hands –the left hand on the back of 
+the head, the right one on the low back, exhale. Repeat the exercise 5 times. 
+2. Sitting on a chair. The right hand is on hips, the left hand is lifted up. Take a breath and 
+slightly bend to the left. Recover place. Then replace the hands, take a breath and bend to the 
+right.   
+Repeat the exercise 5-10 times."
+16,C7. T1T2T3T4T5T6T7,9,36%,Корабли,Умение отличить горделивость от честолюбия!,ЛРСМ,"1. Встать прямо, ноги на ширине плеч, руки вдоль туловища. Поднимите прямые руки 
+(через стороны) верх, сделайте вдох. Опустите руки вниз,  сделайте выдох. 
+2. Встать прямо. Руки поднять вверх (перед собой), сделайте вдох. Опустите руки вниз, 
+сделайте выдох. 
+3. Встать прямо. Прыжки на месте. Мягко пружиньте в коленных и голеностопных 
+суставах.  
+Дыхание свободное   
+Упражнения выполните по 5-10 раз.","1. Stand straight, legs shoulder-width apart, arms along the body. Lift the straight arms 
+(through the sides) up, breathe in. Put the arms down, breathe down. 
+2. Stand straight. Put the arms up (in front of you), breathe in. Put the arms down, breathe out. 
+3. Stand straight. Jump in place. Softly spring in the knee and ankle joints.  
+Easy breathing. 
+Do the exercises 5-10 times.   
+"
+17,C7. T1T2T4Y5T6T7. L3L4L5. S ( S1S3),11,44%,Кот и хозяйка,Умение быть в диалоге в семье.,ЛРСМ,"1. Лежа на спине. Поднимите вверх согнутые в коленях ноги, поднимите шею и голову,  
+руками подтяните колени к голове. Вернитесь в исходное положение. 
+2. Лежа на спине. Правую ногу согните в колене, а  стопу правой ноги поставьте на 
+колено левой ноги. Правую ногу поворачивайте влево, не отрывая правое плечо от пола. 
+Поменяйте местами ноги и сделайте аналогичное движение в другую сторону. 
+Вернитесь в исходное положение.  
+Дыхание свободное.   
+Упражнения выполните  по 3-5 раз.","1.  Lying flat on back. Lift up the legs bent in the knees, lift the neck and the head, pull the 
+knees to the head by the hands рук. Recover place. 
+2. Lying flat on back. Bend the right leg in the knee, and put the right foot on left the knee. 
+Turn the right leg to the left, not lifting the right shoulder from the floor. Replace the legs and 
+do the same movement to the other side. Recover place.  
+Easy breathing. 
+Do the exercises 3-5 times. 
+"
+18,C1. L3L4L5. ,5,20%,Крыши,Умение справляться с  состоянием печали при негативных ситуациях.,ЛРЗДСМФБ,"1.  Ноги на ширине плеч, руки вдоль туловища.  Поднимите правую руку вверх, слегка 
+сжав кисть  в  кулак. Левая рука вдоль туловища, кисть сжата в кулак - вдох. Затем 
+опускаем вниз правую руку (движение впереди себя), а левую руку поднимаем вверх - 
+выдох.  
+Упражнение повторите 5-7 раз. 
+2. Ноги на ширине плеч. Согните руки в локтях на уровне грудины, кисти слегка 
+сожмите  в кулаки - выдох. Затем разведите руки в стороны, максимально сведя лопатки 
+на спине - вдох.  
+Упражнение повторите 5-7 раз. 
+3. Ноги на ширине плеч, руки согнуты в локтях и плотно прижаты по бокам к грудной 
+клетке, лопатки  максимально сведены вместе. Голову опустите вниз, подбородок 
+слегка прижмите к грудине. Затем в этом положении медленно поверните голову вправо 
+- вдох. Верните голову в исходное положение-выдох. Затем поверните голову влево - 
+вдох. Верните голову в исходное положение - выдох. 
+Упражнения выполните по 3-5 раз.","1. Legs shoulder width apart, arms along the body. Lift the right arm up, slightly clenching the 
+hand into the fist. The left arm along the body, the hand is clenched in to the fist - inhale. Then 
+put down the right hand (movement in front of you), and lift the left hand up - exhale.  
+Repeat the exercises 5-7 times. 
+2. Legs shoulder width apart. Shorten your arms in elbows at the chest level, clench your 
+hands slightly into the fists - exhale. Then put your arms aside, joining the scapulae on the 
+back to the maximum – exhale.  
+Repeat the exercise 5-7 times. 
+3. Legs shoulder width apart, arms are shortened in elbows and tightly pressed at the sides to 
+the chest, and scapulae are joined together to the maximum. Put your head down, press your 
+chin slightly to the chest. Then in this position turn your head to the right slowly - inhale. 
+Return the head in the starting position-exhale. Then turn the head to the left - inhale. Return 
+the head to the starting position - exhale. 
+Do the exercises 3-5 times 
+"
+19,C5C6C7. T1T4T5T6T7T8T9T10. L4L5,14,56%,Лесная поляна,"Умение найти место , в котором можно испытать творческий подъем.",ЛРЗД,"1. Стоя.  Стопу  правой ноги поставьте на сиденье стула, согните колено, прямая левая 
+нога  - на полу рядом со стулом. Корпус туловища перенести на правую ногу,  затем 
+вернуться  в исходное положение. Поменять ноги местами, а корпус туловища 
+перенести на левую ногу. Вернитесь в исходное положение.  
+2. Стоя, согните руки в локтях. Поочередно выдвигайте вперед то правое, то левое 
+плечо для скрутки позвоночника вокруг вертикальной оси в области лопаток.    
+Дыхание сводное. 
+Упражнения повторите 3–5 раз.","1. From the standing position, put the right foot on the seat of the chair, bend your knee, the 
+straight left leg is on the floor near the chair. Bring your core onto the right leg, then recover 
+place. To replace the position of the legs, and bring the core of your body on the left foot. 
+Recover place.  
+2. From the standing position, bend your arms in the elbows. Push forward  the right shoulder 
+and the left shoulder in turns, for curling of the spinal code aroud the vertical axis in the zone 
+of scapulae.  
+Easy breathing         
+Repeat the exercises 3–5 times. 
+"
+20,"C1C2,C3. T4T5T6T7T8T9T10T11,T12  ",13,52%,Лошадь и водопад,Умение требовать от собеседника  быть лаконичным и  искренним.,ЛРФБ,"1.  Встаньте на колени. Таз медленно тяните к пяткам, стараясь сесть на них. После 
+этого медленно приподнимите тело и потянитесь руками вверх. 
+2. Примите коленно-локтевое положение: стоя на коленях, локти и предплечья лежат на 
+полу, ладони повернуты к полу; голову держите ровно.  Медленно двигайтесь 
+предплечьями вперед. Затем двигайтесь предплечьями назад в исходное положение. 
+Дыхание свободное.  
+Упражнения повторите  по 5-10 раз.","1. Stand on your knees. Pull your hips to the heels slowly, trying to sit on them. After that 
+slowly lift your body and stretch your arms upwards. 
+2. Take a genupectoral position: standing on the knees, elbows and forearms lie on the floor, 
+palms are turned to the floor; hold your head straight. Move your forearms forward slowly. 
+Then move your forearms backward to the starting position. 
+Easy breathing.  
+Repeat the exercises 5-10 times. 
+"
+21,"C6C7. T1,T2,T3,T4T5T6. L 3L4L5  S (S1)",12,48%,Мексиканский залив,"Умение ждать  событий, которые могут и  не произойти.",СМ,"1. Встаньте прямо, ноги на ширине плеч, руки вдоль туловища. Наклонитесь вперед и 
+достаньте левой рукой носок правой ноги. Вернитесь в исходное положение. Теперь, 
+наклонитесь и достаньте правой рукой носок левой ноги и вернитесь в  исходное 
+положение. 
+2. Встаньте прямо, ноги на ширине плеч, руки  за голову. Медленно на счет 1-2-3 
+поверните корпус туловища вправо, при этом левый локоть идет вперед, а правый – 
+назад. Плавно вернитесь в и. п. и аналогично выполните поворот в другую сторону на 
+счет 1-2-3. 
+Упражнения повторите по 3-5 раз","1. Stand straight, legs at shoulder length, arms along the body. Bend forward and reach the 
+right toe by the left hand. Recover place. Now, bend and reach the left toe by your right hand 
+and recover the place. 
+2. Stand straight, legs at shoulder length, arms on the nape. Slowly counting from 1-2-3 turn 
+your core to the right, at that the left elbow goes forward, and the right elbow goes backward. 
+Smoothly return to the starting position and in the same way turn to the other side counting 
+from 1-2-3.    Repeat the exercises 3-5 times"
+22,C4C5C6. T5T6T7T8T9T10T11T12   ,12,48%,Мир женщины,Умение принять стабильность и постоянства жизненных процессов.,СМ,"1. Встаньте прямо, ноги вместе. Медленно наклонитесь вперед, не сгибая колени. Затем 
+медленно разогнитесь. Поставьте кулаки обеих рук на границу поясничного и грудного 
+отделов позвоночника и медленно прогнитесь всем телом назад, при этом сгибая колени 
+и прижимая подбородок к грудине.  
+2. Встаньте спиной к стене, прижавшись лопатками, ягодицами и пятками к стене. Ноги 
+на ширине плеч. Держась руками за стену, поочередно поднимайте колени. Темп 
+медленный.  
+Дыхание свободное.  
+Упражнения повторите  по 5-10 раз.","1. Stand straight, feet together. Slowly bend yourself forward, not bending your knees. Then 
+unbend slowly. Put the fists of both hands to the border of the lumbar column and the thoracic 
+spine and slowly bend all your body backward, at that bending the knees and pressing the chin 
+to the chest.  
+2. Stand with your back to the wall, pressing by the scapulae, buttocks and heels to the wall. 
+Legs at shoulder length. Holding the wall by your hands, lift your knees in turns. Tempo is 
+slow.  
+Breathing is easy.  
+Re-do exercises for 5-10 times. 
+"
+23,C3C4C5C6. T2 T3T4T7T8T9T10. L 2L3L4. S (S1S2S3),15,60%,Морской берег,Умение быть категоричным - Да или нет!,ЛРФБ,"1.  Встаньте прямо, носки и пятки вместе, ладони прижмите друг к другу. Поднимите 
+руки и максимально потянитесь вверх, поднимаясь на носки, сводя вместе лопатки и 
+втягивая живот. Затем медленно опустите прямые руки через стороны вниз и плавно 
+опуститесь на пятки.  
+Упражнение повторите 5 раз. 
+2.  «Орешек». Лягте на спину, согните ноги в коленях. Обхватив колени руками,  
+покачайтесь – вперед–назад и из сторону в сторону. 
+Дыхание свободное. 
+Упражнение повторите 3-5 раз.","1. Stand straight, toes and heels together, press the palms to each other. Lift your arms and to 
+the maximum stretch upwards, standing on the toes, joining the scapulae together and sucking 
+in the stomach. Then slowly put your straight arms down through the sides and smoothly stand 
+on your heels.  
+Repeat the exercise 5 times. 
+2.  ”The nut”. Lie on the back, bend your knees. Taking the knees into your hands, swing– 
+forward–back and from side to side. 
+Breathing is easy. 
+Repeat the exercise 3-5 times. 
+"
+24,C2C3. T2T3T4T5T6T7T8T9T10. L5.  S (S1S2),13,52%,Навстречу судьбе,Умение отличить  реальное или имитационное движений к цели.,ЛРСМ,"1. Встаньте прямо, ноги на ширине плеч, руки вдоль туловища, пальцы растопырены, 
+ладони смотрят вперед. На вдохе, мысленно считая от 1 до 5, прямые руки поднимайте 
+вверх, затем опускаем руки по круговой траектории вниз - делаем выдох.2. Встаньте прямо. Согните руки в локтях и поставьте кисти на пояс. Медленно присядьте на 
+корточки -  выдох. Затем  выпрямитесь, опустите руки вдоль туловища -  вдох.  
+Упражнения повторите 3–5 раз.","1. Stand straight, legs shoulder-width apart, arms along the body, fingers splayed, palms look 
+forward. Upon inhale, counting in mind from 1 to 5, lift your straight arms up, then put down 
+the arms along the circular path down – exhale. 
+2. Stand straight. Bend your arms in elbows and put your hands on your hips. Slowly scrouch 
+down - exhale. Then stand straight, put your arms along the body - inhale.  
+Repeat the exercises 3–5 times. 
+"
+25,C1C2C4C5 T1T2T4T5T6T7T8 L2L3L4L5.  S (S1),16,64%,Настроение,Умение отличить лицемерие или искренность в добродушии.,ЛРЗД,"1. Стоя. Согните руки в локтях, пальцы рук мягко соберите в кулаки и расположите их 
+по бокам на уровне груди. Голову слегка наклоните вперед, не дотрагиваясь 
+подбородком до грудины. Медленно, на счет 1–2–3–4–5, сведите лопатки вместе, затем 
+медленно и плавно опустите руки и расслабьтесь.  
+Повторите 5 раз.2. Стоя положите ладони обеих рук на ребра, при этом кисти должны быть мягко 
+сложены вместе, ногти больших пальцев располагаются под сосками. Локти заведите за 
+спину, плечи опустите, голову слегка наклоните вперед. На счет 1–2–3–4–5 медленно 
+поверните голову влево, затем медленно и плавно на этот же счет верните голову в 
+исходное положение. После этого на счет 1–2–3–4–5 поверните голову вправо и на этот 
+же счет верните ее в исходное положение.  
+Повторите упражнение по 2 раза в каждую сторону.3. Стоя. На счет 1–2–3–4–5 максимально наклоните голову вперед и подбородком 
+коснитесь грудины. Затем на этот же счет верните голову в исходное положение.  
+Повторите упражнение не более 3 раз. 
+Примечание: Упражнения особенно полезно  делать перед выходом из дома и при входе 
+в него. После выполнения  упражнений доброжелательно себе улыбнитесь и мысленно 
+поблагодарите себя за доброе и внимательное к себе отношение и с таким благотворным 
+настроем – вперед, за текущие дела.","1. From the standing position, bend your arms in the elbows, softly gather the fingers of the 
+hand into the fist and put them at the sides at the chest level. Bend the head slightly forward, 
+not touching the chest by the chin. Slowly, counting from 1–2–3–4–5, join the scapulae 
+together, then slowly and smoothly put your hands down and relax. Repeat 5 times. 
+2. From the standing position put the palms of both hands on the ribs, at that the hands must be 
+folded softly together, the nails of the thumbs are located under the nipples. Put the elbows 
+behind the back, put down the shoulders, bend the head slightly forward. Slowly turn the head 
+to the left counting from 1–2–3–4–5, then return the head into the starting position slowly and 
+smoothly for the same count. After that turn the head to the right counting from 1–2–3–4–5 
+and for the same count return it into the starting position.  
+Repeat the exercise twice to each side. 
+3. From the standing position. Counting from 1–2–3–4–5 bend your head forward to the 
+maximum and touch the chest with your chin. Then return the head into the starting position 
+for the same count.  
+Repeat the exercise at most 3 times. 
+Note: The exercises are especially useful if you do them before leaving home and upon 
+coming home. After doing the exercises smile to yourself friendly and mentally thank yourself 
+for the kind and careful attitude to yourself and with such healthsome mood– get down to your 
+daily proceedings. 
+"
+26,C4C5C5C7. T1T2T3T7T8. L3L4L5. S (S1),13,52%,Одинокий парус,Умение самостоятельно идти по жизни.,ЛРЗДФБ,"1. Сядьте на стул, руками упритесь в колени. В этом положении мягко и спокойно 
+подышите животом (надувая живот,  вдыхаете, а втягивая – выдыхаете). Затем 
+наклоните туловище вперед под углом 45 ° и опять подышите животом. Мягкие, 
+статические движения способствуют восстановлению оптимального внутреннего ритма 
+для исключения обострения хронических заболеваний. 
+2. Сидя на стуле, упритесь руками в сиденье и поднимите таз - сделайте вдох, опустите 
+таз - сделайте выдох.  
+Упражнения выполните по 3-5 раз.","1. Sit on a chair, bump into the knee by your hands. In this position breathe by your stomach 
+softly and smoothly (blowing out the stomach, breathe in, and sucking in – breathe out). Then 
+bend your body forward at the angle 45 ° and again breathe with your stomach. Soft, static 
+movements encourage the recovery of the optimal internal rhythm for exclusion of the acute 
+exacerbation of the chronic diseases. 
+2. Sitting on a chair, bump into the sit and lift your hips – breathe in, put your hips down – 
+breathe out.  
+Do the exercises 3-5 times.   
+"
+27,C3C4. T3T4T5T6T7T8T9T10 L4L5,13,52%,Отражение осени,"Умение смотреть в прошлое, с благодарностью и без обиды.",ЗДСМ,"1. Встаньте прямо, перед грудью согнутые в локтях руки, кисти сожмите в кулаки, 
+которые положите на середину грудины. Отведите обе руки в стороны на вдохе, 
+раскрывая кисти, разгибая локти и сводя вместе лопатки. Вернитесь в исходное  
+положение - выдох. 
+2. Встаньте прямо, руки положите на плечи и плавно выполните вращательные 
+движения в плечевых суставах. Локти поднимаются вверх – вдох, опускаются вниз – 
+выдох. Затем вернитесь в исходное положение и расслабьтесь, опустив руки вдоль 
+туловища.  
+Упражнения повторите по 3–5 раз.","1. Stand straight, arms shortened in elbows in front of the chest, clench your hands into the 
+fists, which put in the middle of the chest. Put your both arms to the sides upon inhale, 
+opening the hands, unbending the elbows and joining the scapulae together. Recover place - 
+exhale. 
+2. Stand straight, put your hands on shoulders and smoothly rotate the shoulder-joints. Elbows 
+are lifted upward– inhale, put down – exhale. Then recover place and relax, putting your arms 
+along the body.  
+Repeat the exercises 3–5 times."
+28,C1C2C3C4C5C6C7. T1 L1L2L3L4L5. S (S1 S2),14,56%,Париж,Умение быть искренним с самим собой.,ЗДФБ,"1. Лежа на спине. Согните ноги в коленях, стопы стоят на полу. Поднимите таз вверх, 
+руками поддерживая ягодицы. Вернитесь в исходное положение. Теперь поднимитесь 
+вверх, возвращаясь в исходное положение. 
+2. Лежа на спине. Ноги вытянуты, стопы вместе. Вытяните максимально вперед носки, 
+сгибая и поджимая пальцы ног. Это положение удерживайте, считая  от 1 до 10. Затем 
+потяните носки на себя, приведя пальцы на себя; сосчитайте от 1 до  5 и вернитесь в  
+исходное положение.  
+Дыхание  свободное.  
+Упражнение выполните по 3-5 раз","1. Lying flat on back. Shorten your legs in knees, feet on the floor. Lift your hips up, 
+supporting your buttocks by the hands. Recover place. Now stand up, recovering place. 
+2. Lying flat on back. Legs stretched, feet together. Stretch your toes forward to the maximum, 
+bending and curling the toes. Hold this position counting from 1 to 10. Then stretch the toes on 
+to yourself, bringing the toes onto yourself; count from 1 to 5 and recover place.  
+Easy breathing.  
+Do the exercises 3-5 times 
+"
+29,C1C6C7. T1T2T3T4T5T6. L4L5. S(S1),12,48%,Первый снег,Умение  быть готовым к неожиданным жизненным ситуациям.,ЛРФБ,"1.  Стоять прямо, ноги на ширине плеч, руки вдоль туловища. Прямые руки медленно 
+поднимите вверх и затем через стороны вниз до уровня таза.  
+2.  Стоя, руки согнуты в локтях и кисти в замке за спиной. Медленно наклоняйте голову 
+вперед и медленно отводите назад.  
+3. Стоя. Руки согните в локтях и прижмите по бокам, кисти на животе. Затем поднимаем 
+плечи - вдох,  опускаем плечи - выдох. 
+Упражнения выполните по  5-10 раз.","1. Stand straight, legs shoulder-width apart, arms along the body. Lift the straight arms up 
+slowly and then through the sides down to the hips level.  
+2. To stand, arms are shortened in elbows and the hands locked behind the back. Bend your 
+head slowly forward and slowly move it backward.  
+3. To stand. Bend your arms in the elbows and press by the sides, hands on the stomach. Then 
+lift the shoulders up - inhale, put the shoulders down - exhale. 
+Do the exercises 5-10 times. 
+"
+30,C3C4. T12. L1,5,20%,Петербургские зонтики,"Умение управлять своим миром, чтобы им не управлял кто-то другой.",ЛРФБ,"1. Встаньте прямо, ноги на ширине плеч, руки прямые подняты вверх над головой, 
+кисти сожмите замком. Со всего маха, резко опустите руки вниз, будто рубите дрова, и 
+одновременно издайте звук «ХО». Вернитесь в исходное положение.  
+2. Встаньте прямо, ноги на ширине плеч. Прижмитесь к стене спиной и, сгибая колени, 
+садитесь на корточки, не отрывая пяток от пола. Затем медленно разогнитесь и станьте в 
+исходное положение. 
+Дыхание свободное.  
+Упражнения выполните по  5-10 раз.","1. Stand straight, legs shoulder-width apart, straight arms are lifted up above the head, hands 
+are locked. At full speed, put your arms down sharply, as if you chopped the wood, and 
+concurrently make a sound ”HO”. Recover place.  
+2. Stand straight, legs shoulder-width apart. Press your back to the wall and bending your 
+knees, hunker down, not lifting the heels from the floor. Then slowly unbend and recover 
+place. 
+Easy breathing.  
+Do the exercises 5-10 times. 
+"
+31,C4. L2L3L4L5,6,24%,Подводный Мир,Умение найти место в хаосе жизни.,ЛРФБ,"1. Встаньте прямо. Кисти положите на одноименные плечи. При вдохе прижмите локти 
+к туловищу, сведите лопатки вместе, поднимитесь на носки и, сосчитав до 10, медленно 
+опуститесь, (при этом, оставляя кисти на плечах), локти сведите вместе – выдох. 
+2. Положите  кисти обеих рук на теменную область головы, (правую положите на левую 
+часть и наоборот левую кисть на правую часть головы), локти параллельны друг другу. 
+В этом положении спокойно произвольно подышите животом.  
+Упражнения выполните по 5-10 раз.","1. Stand straight. Put the hands on the similarly-named shoulders. Under inhale press the 
+elbows to the body, join the scapulae together, lift on toes and having counted to 10, slowly 
+come down, (at that leaving your hands on the shoulders), join the elbows together– exhale. 
+2. Put the hands of both arms on the parietal region of the head, (put the right hand on the left 
+part and the left hand vice versa on the right part of the head), elbows are parallel with each 
+other. In this position breathe with your stomach quietly and freely.  
+Do the exercises 5-10 times."
+32,T3T4T5T6T7T8T9T10. L4L5. S ( S1),11,44%,Подсолнухи на столе,Умение быть готовым к принятию новых идей.,ЛРЗДСМ,"1.  Сядьте на пол, руки поставить за спиной с упором кистями на полу, ноги на ширине 
+плеч, согнутые в коленях.  Поднимаем таз и выгибаемся телом верх,  делаем вдох и 
+опускаем тело и садимся тазом на пол, делаем выдох.   
+2. Встать  ровно, руки вдоль тела, ноги слегка согнутые в коленях, стопы рядом. 
+Подняться на носках и прыгать. Руки прямые во время прыжка поднимаются верх и 
+хлопают в ладоши над головой и опускаются вниз после прыжка. После упражнения 
+возвращаемся в исходное положение.  Во время прыжков дыхание свободное.     
+Упражнения  выполните по  5-10 раз.","1. Sit on the floor, set your arms behind the back against the palms on the floor, legs shoulder-
+width apart, bent in the knees. Lift up your hips and bend your body upward, take a breath and 
+put down the body and sit on the floor by hips, breathe out.   
+2. Stand straight, arms along the body, legs are slightly bent in the knees, feet together. Lift on 
+your toes and hop. Straight arms during hopping are lifted up and clap the hands above the 
+head and put down after the hop. Upon completion of this exercise recover place. During the 
+hops breathing is easy.     
+Do the exercises 5-10 times. 
+"
+33,"C1C2,C5C6C7. T1T2T3T4T5T6T8T9T10T11T12 L1.S(S1)",18,72%,Поезд в горах,Умение быть уверенным и активно убеждать в своих фантастических идеях.,ЛРЗДСМФБ,"1. Встаньте спиной к стене. Руки разведите в стороны и положите на стену, чтобы 
+удобно было стоять. Правую ногу согните в тазобедренном и коленном суставах и 
+максимально приблизите колено к животу. Затем медленно возвратите ногу в исходное 
+положение. Аналогично выполните упражнение левой ногой.  
+2. Стоя, руки возьмите в замок на затылке. Локти приведите вместе (насколько сможете) 
+и медленно разведите назад, чтобы сошлись лопатки.  
+Упражнения повторите по  5–10 раз.","1. Stand with your back to the wall. Arms to the sides and on the wall, so that you stand 
+comfortably. Bend the right leg in the hip and knee joints and close the knee to the stomach to 
+the maximum. Then slowly return the leg to the starting position. In the same way do the 
+exercise with your left leg.  
+2. From the standing position, lock your hands on the back of the head. Bring the elbows 
+together (as far as you can) and slowly spread backwards, so that the scapulae are joined 
+together.  
+Repeat the exercise 5-10 times."
+34,C4C5C6. T3T4T5. L5. S (S1S2),8,32%,Полет попугая на джунглями,Умение ограничивать излишнюю болтливость.,ЛРФБ,"1. Стоя.  Поднимите одну ногу и согните ее в колене. Попрыгайте на другой ноге. Затем 
+поменяйте ноги и снова попрыгайте. Это упражнение добавляет веселого настроения.                             
+Пожилым людям, обремененным суставными проблемами, упражнение следует 
+заменить перекатами с пятки на носок. Поместите обе руки за спину,  ладони положите 
+друг на друга: правую ладонь на левую. Без напряжения поднимите грудную клетку и 
+расправьте плечи. Поднимитесь на носки – и сделайте вдох, опуститесь в исходное 
+положение – выдох. Теперь «завалитесь» на пятку – вдох, при этом грудная клетка 
+немного выгибается вперед, вернитесь в исходное положение – выдох. 
+Упражнение выполните 5-10 раз. 
+2. Поставьте ноги на ширину плеч, носки слегка разверните наружу. Наклонитесь 
+вперед и двумя руками потянитесь к носку левой ноги, при этом левая нога – прямая, а 
+правую немного согните в колене. Наклон делаете, мысленно считая 1–2–3. После этого 
+медленно вернитесь в исходное положение на счет 1–2–3–4–5.  Теперь потянитесь к 
+носку выпрямленной правой ноги, сгибая в колене левую ногу, и медленно разогнитесь.  
+Выполните 5-7 наклонов к каждой ноге. 
+3. Упражнение «Солнышко». Встаньте прямо, руки опущены вниз. Прямые руки на счет 
+1–2–3 поднимите через стороны вверх, при этом ладони развернуты наружу. На тот же 
+счет опустите руки вниз, ладони смотрят вперед.  
+Повторите упражнение  5–6 раз.","1. In the upright position lift one leg and bend it in the knee. Jump on the other leg. The 
+change the legs and jump again. This exercise gives the high spirits. This exercise should be 
+replaced by rolling from the heel to the toe for elderly people, burdened with arterial problems. 
+Place both hands behind the back, put the palms one on another: the right palm on the left one. 
+Lift the chest and square your shoulders without effort. Lift on toes – and draw a breath, return 
+to the starting position. – exhale. Now ”fall” on the heel – inhale, at that the chest is slightly 
+bent forward, recover place – exhale. 
+Do the exercise 5-10 times. 
+2. Legs shoulder-width apart, slightly spread the tiptoes outward. Bend forward and stretch 
+yourself to the tiptoe of the left leg by both hands, at that the left leg is straight, and slightly 
+bend the right leg in the knee. Make a bend, counting in mind 1–2–3. After that return slowly 
+to the starting position counting from 1–2–3–4–5.  Now stretch yourself to the tiptoe of the 
+straight right leg, bending the left leg in the knee and slowly unbend.  
+Bend 5-7 times to each leg. 
+3. Exercise ”The sun”. Stand straight, arms down. Lift the straight arms up through the sides 
+counting from 1–2–3, at that the palms are spread outward. Put your arms down on the same 
+counting, the palms are turned forward.  
+Repeat the exercise 5–6 times."
+35,C5C6. T3T4T5T6T7T8T9T10 L4L5. S (S1),13,52%,Подсолнухи на даче,Умение  создать оригинальный образ жизни.,ЛРСМФБ,"1. Стоя, руки опущены, немного согнуты в локтях и отведены от тела, лопатки сведены 
+вместе. В этом положении попрыгайте на носках (до 10 раз), при этом во время 
+прыжков руки свободные без напряжения.  
+2. Стоя, ноги вместе, руки опущены вдоль туловища. Прыгаете вверх и одновременно 
+ноги разводите на ширину плеч, а ладонями хлопаете над головой. Затем делаете 
+следующий прыжок – ноги сводите вместе, руки опускаете вниз и хлопаете ими за 
+спиной. Прыжки должны быть мягкими, без напряжения – от 5 до 10 раз, в зависимости 
+от вашего состояния.","1. From the standing position, arms down, slightly bent in elbows and put aside from the body, 
+scapulae are joined together. Hop on toes in this position (up to 10 times), at that the arms are 
+free and relaxed during the hops.  
+2. From the standing position, feet together, arms along the body. Hop up and at the same time 
+the feet are spread at shoulder length, and clap your hands above the head. Then do the next 
+hop– feet together, put down the arms and clap behind the back. The hops must be soft, 
+without effort– from 5 to 10 times, depending on your state."
+36,C1C2. L1L2L3L4,7,28%,Пустыня,Умение  идти постепенно и стабильно по жизни.,ЛРЗД,"1. Встаньте прямо, поставьте ноги на ширину плеч. Медленно наклонитесь вперед до 
+упора сделайте выдох, затем медленно разогнитесь, сделайте вдох. 
+2. Встаньте прямо. Согните руки в локтях и упритесь кулаками в область поясничного 
+отдела и медленно  наклонитесь назад сделайте выдох и затем вернитесь в и. п. 
+Опустите руки вдоль туловища  и сделайте вдох.  
+Упражнения повторите по 3–5 раз.","1. Stand straight, put your feet at shoulder length. Slowly bend forward up to the stop exhale, 
+then slowly unbend inhale. 
+2. Stand straight. Bend your arms in elbows and set the fists against the zone of the lumbar 
+spine and slowly bend backward, exhale and then recover place. Put your arms along the body 
+and take a breath.  
+Repeat the exercises 3–5 times."
+37,T9T10T11T12. L1L2L3L4L5.S (S1),10,40%,Роза и Янтарь,Умение совместить в себе молодость и опытность жизни.,ЗДСМ,"1. Сесть на стул так, чтобы бедро и голень образовывали угол 90°. Пятки прижмите друг 
+к другу, а стопы разведите на 90°. Из этого положения медленно вставайте и вновь 
+садитесь на стул.  
+2. Сесть лицом к спинке стула. Медленно и плавно потянитесь к правой стопе, затем 
+медленно  верните туловище  в исходное положение. После этого медленно и 
+осторожно потянитесь в другую сторону. Вернитесь в исходное положение. Повторите 
+упражнение 3-5 раз.  
+Дыхание свободное.  
+Упражнения выполните по 5-10 раз.","1. Sit on a chair so that the hip and calf form the angle 90°. Press the heels to each other and 
+separate the feet for 90°. From this position slowly stand up and and sit on the chair again.  
+2. Sit facing the chair back. Slowly and smoothly stretch yourself to the right foot, then slowly 
+return your body to the starting position. After that slowly and carefully stretch yourself to the 
+other side. Recover place. Repeat the exercise 3-5 times.  
+Easy breathing."
+38,C1C2. T3T4. L5. S (S1),6,24%,Ромашки в поле,Умение собирать энергию творческого потенциала в период застоя.,ЛРЗД,"1. Сесть на стул. Голову наклоните вперед. Руки поставьте на поясницу, обхватив ее 
+большим и указательным пальцами. Подышите животом при этом локти и плечи уходят 
+назад. Это упражнение делайте до появления ощущения сонливости. 
+2. Сидя на стуле. Руки положите на бедра. Поднимите левую ногу и одновременно 
+поднимите вверх плечи -  вдох. Затем опустите ногу и верните плечи в исходное 
+положение – выдох.  То же выполните правой ногой. 
+Упражнения повторите по  5-10 раз.","1. Sit on a chair. Bend your head forward. Put your arms on the low back, bracing it by the 
+thumb and index fingers. Breathe by stomach at that elbows and shoulders go back. Do this 
+exercise till the feeling of drowsiness. 
+2. Sitting on the chair. Put your hands on hips. Lift your left leg and at the same time lift up 
+your shoulders - inhale. Then put down your leg and return your shoulders to the starting 
+position – exhale. Do the same thing with a right leg. 
+Repeat the exercises 5-10 times."
+39,T4T5T6T7T8T9. L3L4L5.S ( S1S2),10,40%,Сияющая Роза,Умение активизировать свою сакральную истину.,ЗД,"1. Встаньте прямо у стены, ноги вместе. Плотно прижмитесь спиной к стене. Медленно 
+поднимите согнутую в колене ногу под углом 90° по отношению к бедру, стопа  
+параллельна пола. Поднимайте поочередно, то левую, то правую ногу. 
+2. Встаньте прямо у стены, ноги вместе. Медленно поднимите согнутую в колене левую 
+ногу и отведите ее в левую сторону на 15–20°, а затем опустите вниз на пол рядом с 
+правой.  Аналогично выполните упражнение правой ногой.  
+Дыхание свободное. 
+Упражнения выполните по 5-10 раз","1. Stand straight at the wall, feet together. Press your back close to the wall. Slowly lift the leg 
+bent in the knee with an angle 90° towards the hip, foot is  parallel to the floor. Lift up the 
+right leg and the left leg in turns. 
+2. Stand straight at the wall, feet together. Lift up the leg bent in knee and put it to the left side 
+for 15–20°, and then put it down on the floor next to the right one. Do the exercise by the right 
+leg in a similar way.  
+Easy breathing. 
+Do the exercise 5-10 times."
+40,C1C2. T10T11T12. L1L2L4L5.S (S1S2S3),10,40%,Солнечная Дорожка,Умение выстраивать отношения между мужчиной и женщиной.,СМ,"1. Встаньте прямо, ноги на ширине плеч, кисти рук положите на поясницу так, чтобы 
+большой палец был направлен назад, а четыре другие пальца – вперед. Выполните 
+круговое движение тазом и корпусом в одну сторону, затем в другую. В процессе 
+выполнения этого движения можете слегка напрягать и расслаблять ягодицы.  
+2. Встаньте прямо. Медленно наклонитесь корпусом влево. Затем выполните наклон 
+вправо.  
+Дыхание сводное.  
+Упражнения выполните по 5-10 раз.","1. Stand straight, legs shoulder-width apart, put your hands on the low back so that the thumb 
+is directed backwards, and other four fingers are forward. Move around your hips and core to 
+the one side, then to the other. During this exercise you may slightly flex and relax buttocks.  
+2. Stand straight. Bend you core slowly to the left. Then bend yourself to the right. 
+ Easy breathing.  
+Do this exercise 5-10 times."
+41,C6C7. T1T2T6T7T8T9T10T11T12,12,48%,Старая Мельница,Умение принятия здравых консервативных идей.,ЛРСМФБ,"1. «Ангельские крылышки». Стоя, прижмитесь спиной к стене; согнутые в локтях и 
+кистях руки тоже прижмите к стене, как бы формируя крылышки; медленно ведите руки 
+по стене вверх и вниз. 
+2. Сядьте на стул и большим пальцем правой руки прикройте правую ноздрю, левую 
+ладонь положите на затылок. Вдохните и надуйте живот, а затем выдохните и втяните 
+живот, при этом дышите через левую ноздрю.  
+Упражнения выполнить по  3-5 раз.","1. ”Angel wings”. From a standing position press your back to the wall; also press your arms 
+to the wall shortened in elbows and hands, as if you formed the wings; move your arms on the 
+wall slowly up and down. 
+2.  Sit on a chair and cover the right nostril by your thumb of the right hand, put the left palm 
+on the back of the head. Breathе in and blow out your stomack, then breath out and gather in 
+stomach, in addition breathe through the left nostril.  
+Do exercises for 3-5 times."
+42,C6C7. T1T2T3T4T5T6. L2L3L4L5. S1,13,52%,Старый Замок,Умение увидеть мечты в реальной жизни.,СМФБ,"1. Встаньте прямо, ноги вместе. Руки вдоль туловища. Поднимите руки вверх (ладонями 
+вперед), соедините лопатки и прогнитесь немного назад. Опустите руки, вернитесь в 
+исходное положение. 
+2. Встаньте прямо. Наклонитесь медленно вперед, попытайтесь руками достать  пол - 
+сделайте выдох. Затем вернитесь в исходное положение -  сделайте вдох.  
+Упражнения выполнить  по 5-10 раз.","1. Stand straight, feet together. Arms along your body. Put your arms up (palms forward), join 
+the scapulae and roll a little back. Put your arms down, recover place. 
+2. Stand straight. Bend forward slowly, try to reach the floor – breathe out. Then recover place 
+– take a breath.  
+Do exercises 5-10 times."
+43,L4L5. S (S1S2S3S4S5) ,3,12%,Теплый Вечер,Умение ограничивать конфликт между мужским и женским началом.,ЗД,"1. Выполните упражнение под названием «кошка». Оно имитирует кошачью утреннюю 
+«гимнастику». Стоя «на четвереньках» (кисти рук упираются в пол), поднимите голову 
+и прогнитесь в поясничной области – сделайте вдох носом, наклоните голову и выгните 
+спину дугой – выдох ртом.   
+2. Выполните упражнение «ныряющая кошка». Стоя на коленях, положите руки на пол 
+на предплечья и делайте движения грудью вперед–назад.  
+3. Лежа на спине, ноги согните в коленях. Медленно поднимите и опустите таз.  
+Упражнения повторите по 5–7 раз.","1. Do the exercise called ”a cat”. It imitates the cat’s morning ”exercises”. Standing ”on fours” 
+(hands are bumped into the floor), lift your head up and roll in the lumbar zone – draw a breath 
+through your nose, bend your head and arch your back – breathing out through your mouth.  
+2. Do the exercise ”a diving cat”. On bended knees, put your arms on the floor on forearms 
+and do exercises by your breast back and forward.  
+3. Lying flat on your back bend your knees. Lift up and lower down slowly your pelvis.  
+Repeat exercises for 5–7 times. 
+"
+44,C6C7. T1T2Y3T4T5T6T7T8T9T10T11T12 L1L2L3,18,72%,Течение Времени,"Умение осуществлять диалог между прошлыми, реальными и будущими событиями жизни.",ЛРСМ,"1.  Стоя. Ноги на ширине плеч. Встаньте в проем двери, поднимите  руки вверх и 
+упритесь руками в горизонтальную планку. Затем прогнитесь грудью и животом вперед 
+- сделайте вдох. Вернитесь в  исходное положение - выдох. 
+2. Стоя. Ноги на ширине плеч. Встаньте в проем двери, поднимите  руки вверх и 
+упритесь руками в вертикальную планку. Затем прогнитесь грудью и животом вперед - 
+сделайте вдох. Вернитесь в  исходное положение - выдох. 
+Упражнения выполните по  3-5 раз.","1. Standing up. Feet shoulder width apart. Stand in the doorway, raise your hands up and rest 
+your hands on the horizontal bar. Then bend your chest and stomach forward - take a breath. 
+Return to the starting position - exhale. 
+2. Standing up. Feet shoulder width apart. Stand in the doorway, raise your hands up and rest 
+your hands on the vertical bar. Then bend your chest and stomach forward - take a breath. 
+Return to the starting position - exhale. 
+Do exercises 3-5 times."
+45,C3C4C5    T2T3T4T5T6T7T8T9T10. L3L4. S ( S1S3),15,60%,Цветы в Стеклянной Вазе,Умение адекватно вмешиваться в жизнь других людей.,ЛРЗД,"1. Встаньте прямо спиной к стене, ноги вместе, носки ног разведены в стороны.  
+Согните руки в локтях и тыльные стороны кистей приблизите к стене.  Не отрывая руки 
+от стены, поднимите их вверх, затем опустите руки вниз. 
+ Повторить 3-5 раз. 
+2. Встаньте прямо, согните руки в локтях и собранные в кулаки кисти рук поставьте над 
+поясницей, стараясь достать лопатки. Согните ноги в коленях и прогнитесь назад – вы 
+натягиваете тело, как лук. 
+ Удержите это положение 8–10 секунд.","1. Stand straight with your back to the wall, feet together, toes to the sides. Shorten your arms 
+in elbows and push the back of hands closer to the wall. Holding your hands on the wall, lift 
+them up, then hands down.  
+Repeat 3-5 times. 
+2. Stand straight, shorten your arms in elbows and put your hands with fingers clenched above 
+the low back, trying to reach the scapulae. Bend your knees and roll backwards – you pull your 
+body as a bow. 
+ Hold this position for 8–10 seconds."
+46,C1C2.  T3T4T5T6T7T8T9T10  L3L4L5. S ( S1),14,56%,Цветы и водопад,"Умение дозировать поток эмоций, чтобы не нарушить тонкий мир человеческих отношений.",СМФБ,"1. Лежа на спине, согните ноги в коленных и тазобедренных суставах и прижмите их к 
+животу, затем медленно разогните и опустите ноги на пол. 
+2. Лежа на спине, согните ноги в коленных суставах, стопа на полу. Затем наклоняете их   
+в одну и другую сторону поочередно, стараясь достать пол коленями. 
+3. Лежа на спине. Поднимите прямые ноги над полом.  Сначала разведите их в стороны, 
+затем скрестите их  между собой.  
+Упражнения выполните по 3-5 раз.","1. Lying flat on back, bend your legs in the knee and hip joints and press them to the stomach, 
+then slowly unbend and put your legs down on the floor. 
+2. Lying flat on back, bend your legs in the knee joints, foot on the floor. Then bend them in 
+one and another side in turns, trying to reach the floor by the knees. 
+3. Lying flat on back. Lift your straight legs above the floor. At first put them aside, then 
+intersect them between each other.  
+Do exercises 3-5 times."
+47,C1C2C3C4C5C6C7   T7T8T9. L4L5. S  (S1S2S3),13,52%,Энергия Исаакиевского Собора,Умение делегировать полномочия.,ЛР,"1. Встаньте на носки (на кончики пальцев ног) поднимите руки вверх и максимально 
+потянитесь вверх руками, при этом важно сбалансировать свое тело для  стабилизации 
+центра тяжести. 
+2. Встаньте прямо, согните руки в локтях. Поочередно выдвигайте вперед то правое, то 
+левое плечо для скрутки позвоночника вокруг вертикальной оси в области лопаток.   
+Упражнение повторите 3–5 раз.","1. Stand on toes (on tiptoes) lift your arms up and maximally stretch yourself up by arms, in 
+addition it is important to balance your body for stabilization of the center of gravity. 
+2. Stand straight, shorten your arms in elbows. In turns push forward at the right then the left 
+shoulder for the spine twisting around a vertical axis in the zone of scapulae.   
+Repeat this exercise 3–5 times. 
+"
+48,C1C2C3C4C5C6C7. T3T7T8T9  L1L4L5. S (S1S2),15,60%,Южный город,"Умение понимать, что  жизнь всегда будет сложная, что нет мест где-то лучше и без  трудностей!",ЛРФБ,"1. Встаньте прямо, ноги на ширине плеч, кисти рук положите на поясницу так, чтобы 
+большой палец был направлен назад, а четыре другие пальца – вперед. Выполните 
+круговое движение туловищем в одну сторону, затем в другую. В процессе выполнения 
+этого движения можете слегка напрягать и расслаблять ягодицы.  
+2. Встаньте прямо. Медленно наклонитесь туловищем влево. Затем выполните наклон 
+вправо.  
+Дыхание сводное.  
+Упражнения повторите по 5-10 раз.","1. Stand straight, legs shoulder-width apart, put your hands on the low back, so that the thumb 
+is directed backward and other four fingers are forward. Make trunk twist to the one side, then 
+to the other. During this exercise you can slightly flex and relax buttocks.  
+2. Stand straight. Bend your body slowly to the left. Then bend to the right. 
+ Easy breathing. 
+"
+49,T3T4T5T6.     L2L3L4L5.  S (S1S2S3),9,36%,Незнакомка,Умение детально планировать будущее.,СМ,"1.  Сядьте на пол. Стопа к стопе. Руки упор в коленный сустав.  Медленно наклоняемся  
+вправо, делаем вдох, прямо садимся - выдох, влево наклон-вдох. В исходное положение-
+выдох. Наклон мягкий назад – вдох, в исходное положение – выдох.  Наклон вперед - 
+вдох, в исходное положение - выдох . 
+2. Стоя. Упор правой руки на талии. Левая нога ставим на носок. Левая рука вверх и 
+наклон вправо на вдохе. Встаем ровно, руки вдоль тела - выдох. Меняем положение. 
+Упражнения  выполните по  5-10 раз.","1.Sit on the floor. Sole to foot. Hands focusing on the knee joint. Slowly bend to the right, take 
+a breath, sit right down - exhale, tilt-inhale to the left. In the starting position, exhale. Soft tilt 
+back - inhale, in the starting position - exhale. Leaning forward - inhale, in the starting position 
+- exhale. 
+2. Standing up.  The emphasis of the right hand on the waist.  We put the left foot on the toe.  
+Left hand up and tilt to the right on inspiration.  We get up straight, arms along the body - 
+exhale.  We change the position. 
+Repeat this exercise 5-10 times."

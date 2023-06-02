@@ -29,6 +29,14 @@ def get_percent(x):
     return 7.4 + x * 0.05 / 19
 
 
+def get_recommendation(selected_cards):
+    recommendations = 'Рекомендация:\n'
+    for card in selected_cards:
+        recommendations += f"{card.get('REC_RU', '')}\n"
+
+    return recommendations
+
+
 def generate_ph_plot(data):
     X = []
     Y = []

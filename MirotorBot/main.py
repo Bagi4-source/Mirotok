@@ -11,7 +11,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 import csv
-from formulas import formula1, formula2, formula3, formula4, generate_plot, get_time, generate_ph_plot, get_percent
+from formulas import formula1, formula2, formula3, formula4, generate_plot, get_time, generate_ph_plot, get_percent, \
+    get_recommendation
 from io import BytesIO
 from aiogram.utils.exceptions import BotBlocked
 
@@ -43,6 +44,8 @@ with open('cards.csv') as f:
             "name": row[4],
             "desc": row[5],
             "EOB": re.findall(r'([А-Я]{2})', row[6].replace(' ', '')),
+            "REC_RU": row[-2],
+            "REC_EN": row[-1],
         }
 
 # Configure logging
@@ -894,7 +897,9 @@ async def web_app(message: types.Message):
     image = image.read()
     arrows = arrows.read()
 
-    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}"
+    recommendation = get_recommendation(selected_cards)
+
+    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}\n\n{recommendation}"
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), text)
@@ -935,6 +940,8 @@ async def manual_test(message: types.Message):
     if not selected_cards:
         return await message.answer(f"Непредвиденная ошибка!")
 
+    recommendation = get_recommendation(selected_cards)
+
     names = "Вы выбрали репродукции картин Мироток:\n"
     names += "\n".join([f"• {x.get('id', '')}.{x.get('name', '')}" for x in selected_cards])
     names += "\nОписание картин в таблице...\nАвтор живописных картин Бендицкий Игорь Эдуардович | BENDITSKIY IGOR"
@@ -955,7 +962,7 @@ async def manual_test(message: types.Message):
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
                                       f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n"
-                                      f"\n{f1}\n\n{f4}")
+                                      f"\n{f1}\n\n{f4}\n\n{recommendation}")
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))
