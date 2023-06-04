@@ -150,7 +150,10 @@ def generate_image(positive, negative):
             item = Image.open(path)
             image.paste(item, mask=item)
 
-    return image
+    bg = Image.open(os.path.join(DIR, 'bg2.png'))
+    bg.paste(image)
+
+    return bg
 
 
 async def bones_sum(selected_cards):
@@ -210,7 +213,10 @@ def get_image(items):
     drawText((455, 890), 'СМ')
     drawText((330, 940), 'ЛР')
     drawText((455, 940), 'ЗД')
-    return image
+
+    bg = Image.open(os.path.join(ARROWS_DIR, 'bg2.png'))
+    bg.paste(image)
+    return bg
 
 
 async def formula4(selected_cards):
