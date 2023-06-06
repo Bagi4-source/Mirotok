@@ -966,7 +966,7 @@ async def manual_test(message: types.Message):
     media = types.MediaGroup()
     text = f"{names}\n{DELIM}" \
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
-           f"Остаточные эмоционально образные блоки:\n{f3}{DELIM}" \
+           f"Остаточные эмоционально образные блоки:\n{f3}\n{DELIM}" \
            f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
            f"{f4}"
