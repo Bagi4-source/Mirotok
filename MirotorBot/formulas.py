@@ -45,7 +45,7 @@ def generate_ph_plot(data):
         X.append(get_time(item.get('create_time')))
 
     fig, ax = plt.subplots()
-    ax.set_xlabel("График баланса кислотно-щелочной среды", fontsize=22)
+    ax.set_xlabel("График баланса кислотно-щелочной среды", fontsize=22, fontdict=dict(weight='semibold'))
 
     alpha = 0.3
     ax.axhspan(get_percent(87), get_percent(152), facecolor='#E56635', alpha=alpha)
@@ -100,7 +100,7 @@ def generate_plot(data):
         X.append(get_time(item.get('create_time')))
 
     fig, ax = plt.subplots()
-    ax.set_xlabel("График баланса энергоемкости", fontsize=22)
+    ax.set_xlabel("График баланса энергоемкости", fontsize=22, fontdict=dict(weight='semibold'))
 
     ax.plot(X, Y, marker='o', linestyle='--', color='r', linewidth=2.6)
     ax.plot(X, [-0.2] * len(X), linestyle='-', color='k', linewidth=1.8)
