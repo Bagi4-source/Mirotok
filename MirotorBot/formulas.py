@@ -319,13 +319,14 @@ async def formula1(selected_cards):
     positive = selected_cards[:3]
     negative = selected_cards[3:]
 
-    result = ''
+    result = []
     for card in positive:
         desc = card.get('desc', '')
-        result += f'• НЕ {desc}\n'
+        result.append(f'• НЕ {desc}')
 
     for card in negative:
         desc = card.get('desc', '')
-        result += f'• {desc}\n'
+        result.append(f'• {desc}')
 
+    result = '\n'.join(result)
     return result
