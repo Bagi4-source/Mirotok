@@ -252,11 +252,11 @@ async def formula4(selected_cards):
             positive[key] = value
 
     text = []
-    if negative:
-        text.append(f'Скрытые потребности: {", ".join([f"{value}{key}" for key, value in negative.items()])}')
-
     if positive:
         text.append(f'Реальные потребности: {", ".join([f"{value}{key}" for key, value in positive.items()])}')
+
+    if negative:
+        text.append(f'Скрытые потребности: {", ".join([f"({value}){key}" for key, value in negative.items()])}')
 
     text = "\n".join(text)
     text = 'Реальные и скрытые потребности:\n' + text

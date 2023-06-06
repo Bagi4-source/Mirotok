@@ -900,7 +900,7 @@ async def web_app(message: types.Message):
     arrows = arrows.read()
     text = f"{names}\n{DELIM}" \
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
-           f"Баланс энергоемкости: {power}%\n" \
+           f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
            f"{f4}"
 
@@ -965,7 +965,7 @@ async def manual_test(message: types.Message):
     media = types.MediaGroup()
     text = f"{names}\n{DELIM}" \
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
-           f"Баланс энергоемкости: {power}%\n" \
+           f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
            f"{f4}"
 
