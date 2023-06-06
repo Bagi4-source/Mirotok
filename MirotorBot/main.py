@@ -955,7 +955,7 @@ async def manual_test(message: types.Message):
     await post_result(message.from_user.id, power)
 
     plot, plot_ph = await get_plot(message.from_user.id)
-    image, _ = await formula3(selected_cards)
+    image, f3 = await formula3(selected_cards)
     arrows, f4 = await formula4(selected_cards)
 
     plot = plot.read()
