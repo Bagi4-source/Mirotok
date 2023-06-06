@@ -900,10 +900,10 @@ async def web_app(message: types.Message):
     arrows = arrows.read()
     text = f"{names}\n{DELIM}" \
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
+           f"Остаточные эмоционально образные блоки:\n{f3}{DELIM}" \
            f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
-           f"{f4}\n{DELIM}" \
-           f"Остаточные эмоционально образные блоки:\n{f3}"
+           f"{f4}"
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), text)
@@ -966,10 +966,10 @@ async def manual_test(message: types.Message):
     media = types.MediaGroup()
     text = f"{names}\n{DELIM}" \
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
+           f"Остаточные эмоционально образные блоки:\n{f3}{DELIM}" \
            f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
-           f"{f4}\n{DELIM}" \
-           f"Остаточные эмоционально образные блоки:\n{f3}"
+           f"{f4}"
 
     media.attach_photo(BytesIO(plot), text)
     media.attach_photo(BytesIO(plot_ph))
