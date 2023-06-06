@@ -21,6 +21,8 @@ API_TOKEN = os.getenv('API_TOKEN')
 ADMINS = os.getenv('ADMINS').replace(' ', '').split(',')
 DOCTORS = os.getenv('DOCTORS').replace(' ', '').split(',')
 
+DELIM = '-' * 25 + '\n'
+
 for i, a in enumerate(ADMINS):
     ADMINS[i] = int(a)
 
@@ -896,8 +898,11 @@ async def web_app(message: types.Message):
     plot_ph = plot_ph.read()
     image = image.read()
     arrows = arrows.read()
-
-    text = f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\nБаланс кислотно-щелочной среды: {get_percent(power)}pH\n\n{f1}\n\n{f4}"
+    text = f"{names}\n{DELIM}" \
+           f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
+           f"Баланс энергоемкости: {power}%\n" \
+           f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
+           f"{f4}"
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), text)
@@ -912,7 +917,7 @@ async def web_app(message: types.Message):
     user_info = f"@{message.from_user.username}\n{message.from_user.first_name} {message.from_user.last_name}\n#{message.from_user.id}"
 
     media = types.MediaGroup()
-    media.attach_photo(BytesIO(plot), f"{user_info}\n\n" + text)
+    media.attach_photo(BytesIO(plot), f"{user_info}\n{DELIM}" + text)
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))
@@ -958,9 +963,13 @@ async def manual_test(message: types.Message):
     arrows = arrows.read()
 
     media = types.MediaGroup()
-    media.attach_photo(BytesIO(plot), f"{names}\n\nРезультат:\nБаланс энергоемкости: {power}%\n"
-                                      f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n"
-                                      f"\n{f1}\n\n{f4}")
+    text = f"{names}\n{DELIM}" \
+           f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
+           f"Баланс энергоемкости: {power}%\n" \
+           f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
+           f"{f4}"
+
+    media.attach_photo(BytesIO(plot), text)
     media.attach_photo(BytesIO(plot_ph))
     media.attach_photo(BytesIO(image))
     media.attach_photo(BytesIO(arrows))

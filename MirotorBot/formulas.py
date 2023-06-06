@@ -251,12 +251,15 @@ async def formula4(selected_cards):
         if value > 0:
             positive[key] = value
 
-    text = ''
+    text = []
     if negative:
-        text += f'Скрытые потребности: {", ".join([f"{value}{key}" for key, value in negative.items()])}\n'
+        text.append(f'Скрытые потребности: {", ".join([f"{value}{key}" for key, value in negative.items()])}')
 
     if positive:
-        text += f'Реальные потребности: {", ".join([f"{value}{key}" for key, value in positive.items()])}\n'
+        text.append(f'Реальные потребности: {", ".join([f"{value}{key}" for key, value in positive.items()])}')
+
+    text = "\n".join(text)
+    text = 'Реальные и скрытые потребности:\n' + text
 
     image = get_image(result)
     bio = BytesIO()
