@@ -286,12 +286,19 @@ async def formula3(selected_cards):
         if item in positive:
             neg_copy.remove(item)
 
+    text = []
+    if pos_copy:
+        text.append(f"Реальные: {', '.join(pos_copy)}")
+    if neg_copy:
+        text.append(f"Скрытые: {', '.join(neg_copy)}")
+    text = '\n'.join(text)
+
     img = generate_image(pos_copy, neg_copy)
     bio = BytesIO()
     bio.name = 'image.png'
     img.save(bio, 'PNG')
     bio.seek(0)
-    return bio, positive
+    return bio, text
 
 
 async def formula2(selected_cards):

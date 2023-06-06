@@ -891,7 +891,7 @@ async def web_app(message: types.Message):
     await post_result(message.from_user.id, power)
 
     plot, plot_ph = await get_plot(message.from_user.id)
-    image, _ = await formula3(selected_cards)
+    image, f3 = await formula3(selected_cards)
     arrows, f4 = await formula4(selected_cards)
 
     plot = plot.read()
@@ -902,7 +902,8 @@ async def web_app(message: types.Message):
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
            f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
-           f"{f4}"
+           f"{f4}\n{DELIM}" \
+           f"Остаточные эмоционально образные блоки:\n{f3}"
 
     media = types.MediaGroup()
     media.attach_photo(BytesIO(plot), text)
@@ -967,7 +968,8 @@ async def manual_test(message: types.Message):
            f"Мотивационно образная формула:\n{f1}\n{DELIM}" \
            f"Баланс энергоемкости: {power}%\n{DELIM}" \
            f"Баланс кислотно-щелочной среды: {round(get_percent(power) * 1000) / 1000}pH\n{DELIM}" \
-           f"{f4}"
+           f"{f4}\n{DELIM}" \
+           f"Остаточные эмоционально образные блоки:\n{f3}"
 
     media.attach_photo(BytesIO(plot), text)
     media.attach_photo(BytesIO(plot_ph))
