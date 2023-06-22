@@ -1,6 +1,4 @@
-import random
 from io import BytesIO
-
 import numpy as np
 from PIL import Image, ImageFont, ImageDraw
 import os
@@ -269,6 +267,19 @@ async def formula4(selected_cards):
     return bio, text
 
 
+def sort_f(x):
+    keys = {
+        "C": 0,
+        "T": 1,
+        "L": 2,
+        "S": 3
+    }
+    for key, value in keys.items():
+        if x[0] == key:
+            return int(x.replace(key, '').strip()) + value * 100
+    return 0
+
+
 async def formula3(selected_cards):
     if len(selected_cards) != 5:
         return None
@@ -288,8 +299,10 @@ async def formula3(selected_cards):
 
     text = []
     if pos_copy:
+        pos_copy = sorted(pos_copy, key=lambda x: sort_f(x))
         text.append(f"Реальные: {', '.join(pos_copy)}")
     if neg_copy:
+        neg_copy = sorted(neg_copy, key=lambda x: sort_f(x))
         text.append(f"Скрытые: {', '.join(neg_copy)}")
     text = '\n'.join(text)
 
