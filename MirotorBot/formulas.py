@@ -53,7 +53,7 @@ def generate_ph_plot(data):
     ax.axhspan(get_percent(-48), get_percent(-19), facecolor='#689DCF', alpha=alpha)
     ax.axhspan(get_percent(-76), get_percent(-48), facecolor='#4E3975', alpha=alpha)
 
-    ax.plot(X, Y, marker='o', linestyle='-', color='#861919', linewidth=2.8)
+    ax.plot(X, Y, marker='o', linestyle='--', color='#861919', linewidth=2.6)
     ax.plot(X, [get_percent(-0.2)] * len(X), linestyle='-', color='g', linewidth=1.8)
 
     ax.xaxis.set_major_formatter(dates.DateFormatter('%d %b'))
@@ -100,7 +100,7 @@ def generate_plot(data):
     fig, ax = plt.subplots()
     ax.set_xlabel("График баланса энергоемкости", fontsize=22, fontdict=dict(weight='medium'))
 
-    ax.plot(X, Y, marker='o', linestyle='-', color='#861919', linewidth=2.8)
+    ax.plot(X, Y, marker='o', linestyle='--', color='#861919', linewidth=2.6)
     ax.plot(X, [-0.2] * len(X), linestyle='-', color='k', linewidth=1.8)
 
     ax.xaxis.set_major_formatter(dates.DateFormatter('%d %b'))
