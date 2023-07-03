@@ -100,7 +100,7 @@ def generate_plot(data):
     fig, ax = plt.subplots()
     ax.set_xlabel("График баланса энергоемкости", fontsize=22, fontdict=dict(weight='medium'))
 
-    ax.plot(X, Y, marker='o', linestyle='-', color='##861919', linewidth=2.8)
+    ax.plot(X, Y, marker='o', linestyle='-', color='#861919', linewidth=2.8)
     ax.plot(X, [-0.2] * len(X), linestyle='-', color='k', linewidth=1.8)
 
     ax.xaxis.set_major_formatter(dates.DateFormatter('%d %b'))
